@@ -4,6 +4,8 @@ import loginLogo from '../assets/login.png'
 
 const mobileOpen = ref(false)
 const scrolled = ref(false)
+/** 交易登錄 / 交易平臺入口，暂隐藏 */
+const showTradeEntry = false
 const tradeBase = computed(() => 'https://trade.hkax.com.hk/')
 const tradeUrl = computed(() => `${tradeBase.value}tradesite`)
 
@@ -64,7 +66,7 @@ onUnmounted(() => {
           <RouterLink to="/contact" class="nav-item">聯繫我們</RouterLink>
         </nav>
 
-        <div class="header-actions">
+        <div v-if="showTradeEntry" class="header-actions">
           <span class="mobile-link primary-btn btn-sm" @click="openTrade">交易登錄</span>
         </div>
 
@@ -91,6 +93,7 @@ onUnmounted(() => {
           </div>
           <div class="mobile-footer">
             <a
+              v-if="showTradeEntry"
               :href="tradeUrl"
               target="_blank"
               rel="noopener"
