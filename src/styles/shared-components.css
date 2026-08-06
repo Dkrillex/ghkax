@@ -1,0 +1,7 @@
+body{display:block!important;place-items:unset!important}
+.fade-enter-active,.fade-leave-active{transition:opacity .35s ease}
+.fade-enter-from,.fade-leave-to{opacity:0}
+.slide-down-enter-active,.slide-down-leave-active{transition:transform .6s ease,opacity .6s ease}
+.slide-down-enter-from,.slide-down-leave-to{transform:translateY(-100%);opacity:0}
+.slide-up-enter-active,.slide-up-leave-active{transition:transform .6s ease,opacity .6s ease}
+.slide-up-enter-from,.slide-up-leave-to{transform:translateY(100%);opacity:0}

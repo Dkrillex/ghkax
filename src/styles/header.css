@@ -1,0 +1,49 @@
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;transition:box-shadow .3s}
+.site-header.scrolled .main-nav-wrap{box-shadow:0 4px 20px #5b3de51f}
+.top-bar{background:var(--primary-dark);padding:6px 0;font-size:12.5px;color:#ffffffb3}
+.top-inner{display:flex;justify-content:space-between;align-items:center}
+.top-link{color:#ffffffb3;text-decoration:none;transition:color .18s}
+.top-link:hover{color:#fff}
+.top-divider{margin:0 10px;opacity:.3}
+.top-right{display:flex;align-items:center;gap:16px}
+.top-hotline{color:#fffc;font-weight:500}
+.top-cta{padding:3px 12px;background:var(--gold);color:var(--primary-dark);border-radius:4px;font-weight:700;font-size:12px;text-decoration:none;transition:background .18s}
+.top-cta:hover{background:var(--gold-light)}
+.main-nav-wrap{background:#fff;border-bottom:2px solid var(--border-light);transition:box-shadow .3s}
+.main-nav-inner{display:flex;align-items:center;height:64px;gap:0}
+.logo-wrap{display:flex;align-items:center;text-decoration:none;flex-shrink:0;margin-right:32px}
+.logo-img{height:60px;width:150px;display:block}
+.nav-menu{display:flex;align-items:center;gap:2px;flex:1}
+.nav-item{position:relative;padding:8px 14px;border-radius:6px;font-size:14.5px;font-weight:500;color:var(--text);text-decoration:none;cursor:pointer;transition:background .18s,color .18s;white-space:nowrap;display:flex;align-items:center;gap:3px}
+.nav-item:hover,.nav-item.router-link-active{background:#5b3de50f;color:var(--primary)}
+.nav-item.router-link-exact-active{color:var(--primary);font-weight:600}
+.arrow-down{font-style:normal;font-size:11px;opacity:.5;transition:transform .2s}
+.has-dropdown:hover .arrow-down{transform:rotate(180deg)}
+.dropdown{position:absolute;top:100%;left:0;min-width:220px;background:#fff;border-radius:0 0 10px 10px;box-shadow:0 8px 32px #5b3de524;border:1px solid var(--border-light);border-top:none;padding:12px 8px 8px;opacity:0;pointer-events:none;transform:translateY(-4px);transition:opacity .2s,transform .2s;z-index:100}
+.has-dropdown:after{content:"";position:absolute;bottom:-12px;left:0;right:0;height:12px}
+.has-dropdown:hover .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
+.dropdown-item{display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:7px;text-decoration:none;transition:background .18s}
+.dropdown-item:hover{background:var(--bg-section)}
+.dropdown-item strong{font-size:14px;font-weight:600;color:var(--text);display:block}
+.dropdown-item small{font-size:12px;color:var(--text-light);display:block;font-weight:400}
+.header-actions{display:flex;align-items:center;margin-left:auto;flex-shrink:0}
+.btn-sm{padding:8px 18px!important;font-size:13.5px!important}
+.hamburger{display:none;flex-direction:column;gap:5px;background:transparent;border:none;padding:6px;margin-left:12px}
+.bar{width:22px;height:2px;background:var(--primary-dark);border-radius:2px;display:block;transition:all .25s;transform-origin:center}
+.mobile-nav{position:fixed;inset:0;background:#00143280;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);z-index:999}
+.mobile-nav-inner{position:absolute;right:0;top:0;bottom:0;width:280px;background:#fff;display:flex;flex-direction:column;padding:80px 0 32px}
+.mobile-section{flex:1;padding:0 24px;overflow-y:auto}
+.mobile-link{display:block;margin-right:10px;padding:13px 0;color:var(--text);font-size:15px;font-weight:500;text-decoration:none;transition:color .18s}
+.mobile-link:hover,.mobile-link.router-link-active{color:var(--primary)}
+.mobile-footer{padding:16px 24px 0;display:flex;flex-direction:column;gap:12px}
+.mobile-tel{text-align:center;color:var(--text-light);font-size:13px}
+.mobile-slide-enter-active,.mobile-slide-leave-active{transition:opacity .3s}
+.mobile-slide-enter-from,.mobile-slide-leave-to{opacity:0}
+@media(max-width:960px){.nav-menu,.header-actions{display:none}.hamburger{display:flex;margin-left:auto}}
+@media(max-width:600px){.top-left{display:none}}
+
+.bar.rotate-45{transform:translateY(7px) rotate(45deg)}
+.bar.opacity-0{opacity:0}
+.bar.rotate-n45{transform:translateY(-7px) rotate(-45deg)}
+.header-actions .mobile-link{cursor:pointer;display:inline-flex;margin:0;padding:8px 18px}
+.header-actions .mobile-link.primary-btn{color:#fff}
