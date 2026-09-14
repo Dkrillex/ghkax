@@ -33,7 +33,7 @@ onUnmounted(() => {
         <div class="top-left">
           <RouterLink to="/contact" class="top-link">Contact Us</RouterLink>
           <span class="top-divider">|</span>
-          <span class="top-hotline">☎ &nbsp;+852 3797 6308</span>
+          <span class="top-hotline">☎ &nbsp;+852 3120 8846</span>
         </div>
       </div>
     </div>
@@ -106,7 +106,7 @@ onUnmounted(() => {
               style="width: 100%; justify-content: center"
               @click="mobileOpen = false"
             >Book a Meeting</RouterLink>
-            <p class="mobile-tel">☎ +852 3797 6308</p>
+            <p class="mobile-tel">☎ +852 3120 8846</p>
           </div>
         </div>
       </div>

@@ -42,16 +42,7 @@ function submit() {
               <div class="ii-icon">📞</div>
               <div>
                 <div class="ii-label">Phone</div>
-                <a href="tel:+85237976308" class="ii-val">+852 3797 6308</a>
-              </div>
-            </div>
-            <div class="info-item">
-              <div class="ii-icon">📍</div>
-              <div>
-                <div class="ii-label">Address</div>
-                <span class="ii-val">
-                  41/F, Enterprise Square Three, 39 Wang Chiu Road, Kowloon Bay, Kowloon, Hong Kong
-                </span>
+                <a href="tel:+85231208846" class="ii-val">+852 3120 8846</a>
               </div>
             </div>
             <div class="info-item">

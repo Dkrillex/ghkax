@@ -112,7 +112,7 @@ const sections = [
       'Address: 41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong',
       'English Address: 41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong',
       'Data Protection Officer',
-      'Tel: (852) 2331 2862',
+      'Tel: (852) 3120 8846',
       'Fax: (852) 2331 2683',
       'Email: ops@ghkax.com',
     ],

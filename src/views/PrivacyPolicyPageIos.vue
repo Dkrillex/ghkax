@@ -124,7 +124,7 @@ const sections = [
       'English name: ghkax Limited',
       'Correspondence address: 41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong',
       'English address: 41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong',
-      'Tel: (852) 2331 2862',
+      'Tel: (852) 3120 8846',
       'Fax: (852) 2331 2683',
       'Email: ops@ghkax.com',
       'After receiving your request, we will verify, process, and respond within a reasonable period.',

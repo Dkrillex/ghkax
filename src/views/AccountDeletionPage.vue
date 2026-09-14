@@ -302,9 +302,9 @@ const submitForm = async () => {
                   <strong>Email Request</strong>
                   <span>ops@ghkax.com</span>
                 </a>
-                <a href="tel:+85223312862" class="contact-tile">
+                <a href="tel:+85231208846" class="contact-tile">
                   <strong>Phone Contact</strong>
-                  <span>13728883039</span>
+                  <span>+852 3120 8846</span>
                 </a>
                 <button type="button" class="contact-tile contact-button" @click="openForm">
                   <strong>Submit Form</strong>
