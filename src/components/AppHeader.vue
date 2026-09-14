@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue'
-import loginLogo from '../assets/login.png'
+import brandLogo from '../assets/ghkax-logo.png'
 
 const mobileOpen = ref(false)
 const scrolled = ref(false)
-/** 交易登錄 / 交易平臺入口，暂隐藏 */
+/** Trade login / trading platform entry — temporarily hidden */
 const showTradeEntry = false
-const tradeBase = computed(() => 'https://trade.hkax.com.hk/')
+const tradeBase = computed(() => 'https://trade.ghkax.com/')
 const tradeUrl = computed(() => `${tradeBase.value}tradesite`)
 
 function openTrade() {
@@ -31,7 +31,7 @@ onUnmounted(() => {
     <div class="top-bar">
       <div class="container top-inner">
         <div class="top-left">
-          <RouterLink to="/contact" class="top-link">聯繫我們</RouterLink>
+          <RouterLink to="/contact" class="top-link">Contact Us</RouterLink>
           <span class="top-divider">|</span>
           <span class="top-hotline">☎ &nbsp;+852 3797 6308</span>
         </div>
@@ -40,34 +40,34 @@ onUnmounted(() => {
 
     <div class="main-nav-wrap">
       <div class="container main-nav-inner">
-        <RouterLink to="/" class="logo-wrap" aria-label="首頁">
-          <img :src="loginLogo" alt="HKAX" class="logo-img" />
+        <RouterLink to="/" class="logo-wrap" aria-label="ghkax Home">
+          <img :src="brandLogo" alt="ghkax" class="logo-img" />
         </RouterLink>
 
-        <nav class="nav-menu" role="navigation" aria-label="主導航">
-          <RouterLink to="/" class="nav-item">首頁</RouterLink>
+        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+          <RouterLink to="/" class="nav-item">Home</RouterLink>
           <div class="nav-item has-dropdown">
-            <span>平臺介紹 <i class="arrow-down">▾</i></span>
+            <span>About the Platform <i class="arrow-down">▾</i></span>
             <div class="dropdown">
               <RouterLink to="/about" class="dropdown-item">
-                <strong>公司概述</strong>
-                <small>HKAX 背景與核心定位</small>
+                <strong>Company Overview</strong>
+                <small>ghkax background and core positioning</small>
               </RouterLink>
               <RouterLink to="/platform-features" class="dropdown-item">
-                <strong>平臺功能</strong>
-                <small>交易、清算、託管全鏈路</small>
+                <strong>Platform Features</strong>
+                <small>Trading, clearing, and custody end to end</small>
               </RouterLink>
             </div>
           </div>
-          <RouterLink to="/ecosystem" class="nav-item">平臺生態</RouterLink>
-          <RouterLink to="/advantages" class="nav-item">核心優勢</RouterLink>
-          <RouterLink to="/products" class="nav-item">平臺產品</RouterLink>
-          <RouterLink to="/cooperation" class="nav-item">合作價值</RouterLink>
-          <RouterLink to="/contact" class="nav-item">聯繫我們</RouterLink>
+          <RouterLink to="/ecosystem" class="nav-item">Ecosystem</RouterLink>
+          <RouterLink to="/advantages" class="nav-item">Core Advantages</RouterLink>
+          <RouterLink to="/products" class="nav-item">Products</RouterLink>
+          <RouterLink to="/cooperation" class="nav-item">Partnership Value</RouterLink>
+          <RouterLink to="/contact" class="nav-item">Contact Us</RouterLink>
         </nav>
 
         <div v-if="showTradeEntry" class="header-actions">
-          <span class="mobile-link primary-btn btn-sm" @click="openTrade">交易登錄</span>
+          <span class="mobile-link primary-btn btn-sm" @click="openTrade">Trade Login</span>
         </div>
 
         <button class="hamburger" aria-label="Toggle menu" @click="mobileOpen = !mobileOpen">
@@ -82,14 +82,14 @@ onUnmounted(() => {
       <div v-if="mobileOpen" class="mobile-nav">
         <div class="mobile-nav-inner">
           <div class="mobile-section">
-            <RouterLink to="/" class="mobile-link" @click="mobileOpen = false">首頁</RouterLink>
-            <RouterLink to="/about" class="mobile-link" @click="mobileOpen = false">公司概述</RouterLink>
-            <RouterLink to="/ecosystem" class="mobile-link" @click="mobileOpen = false">平臺生態</RouterLink>
-            <RouterLink to="/platform-features" class="mobile-link" @click="mobileOpen = false">平臺功能</RouterLink>
-            <RouterLink to="/advantages" class="mobile-link" @click="mobileOpen = false">核心優勢</RouterLink>
-            <RouterLink to="/products" class="mobile-link" @click="mobileOpen = false">平臺產品</RouterLink>
-            <RouterLink to="/cooperation" class="mobile-link" @click="mobileOpen = false">合作價值</RouterLink>
-            <RouterLink to="/contact" class="mobile-link" @click="mobileOpen = false">聯繫我們</RouterLink>
+            <RouterLink to="/" class="mobile-link" @click="mobileOpen = false">Home</RouterLink>
+            <RouterLink to="/about" class="mobile-link" @click="mobileOpen = false">Company Overview</RouterLink>
+            <RouterLink to="/ecosystem" class="mobile-link" @click="mobileOpen = false">Ecosystem</RouterLink>
+            <RouterLink to="/platform-features" class="mobile-link" @click="mobileOpen = false">Platform Features</RouterLink>
+            <RouterLink to="/advantages" class="mobile-link" @click="mobileOpen = false">Core Advantages</RouterLink>
+            <RouterLink to="/products" class="mobile-link" @click="mobileOpen = false">Products</RouterLink>
+            <RouterLink to="/cooperation" class="mobile-link" @click="mobileOpen = false">Partnership Value</RouterLink>
+            <RouterLink to="/contact" class="mobile-link" @click="mobileOpen = false">Contact Us</RouterLink>
           </div>
           <div class="mobile-footer">
             <a
@@ -99,13 +99,13 @@ onUnmounted(() => {
               rel="noopener"
               class="mobile-link"
               @click="mobileOpen = false"
-            >交易平臺</a>
+            >Trading Platform</a>
             <RouterLink
               to="/contact"
               class="primary-btn"
               style="width: 100%; justify-content: center"
               @click="mobileOpen = false"
-            >預約洽談</RouterLink>
+            >Book a Meeting</RouterLink>
             <p class="mobile-tel">☎ +852 3797 6308</p>
           </div>
         </div>

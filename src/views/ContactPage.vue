@@ -10,7 +10,7 @@ const form = reactive({
 })
 
 function submit() {
-  alert(`提交成功！\n姓名：${form.name}\n聯繫：${form.contact}\n我們將盡快與您聯繫。`)
+  alert(`Submitted successfully!\nName: ${form.name}\nContact: ${form.contact}\nWe will get back to you shortly.`)
   form.name = ''
   form.company = ''
   form.contact = ''
@@ -23,9 +23,9 @@ function submit() {
   <div class="page">
     <section class="page-hero">
       <div class="container page-hero-inner">
-        <div class="ph-breadcrumb">首頁 / 聯繫我們</div>
-        <h1 class="ph-title">聯繫我們</h1>
-        <p class="ph-desc">預約洽談或在線留言，我們將盡快與您聯繫，探討合作機遇。</p>
+        <div class="ph-breadcrumb">Home / Contact</div>
+        <h1 class="ph-title">Contact Us</h1>
+        <p class="ph-desc">Book a consultation or leave a message online — we will get back to you shortly to explore partnership opportunities.</p>
       </div>
     </section>
 
@@ -35,75 +35,74 @@ function submit() {
           <div class="section-header">
             <div class="title-line" />
             <p class="section-sub">Contact Info</p>
-            <h2 class="section-title">聯繫方式</h2>
+            <h2 class="section-title">Contact Details</h2>
           </div>
           <div class="info-items">
             <div class="info-item">
               <div class="ii-icon">📞</div>
               <div>
-                <div class="ii-label">電話</div>
+                <div class="ii-label">Phone</div>
                 <a href="tel:+85237976308" class="ii-val">+852 3797 6308</a>
               </div>
             </div>
             <div class="info-item">
               <div class="ii-icon">📍</div>
               <div>
-                <div class="ii-label">地址</div>
+                <div class="ii-label">Address</div>
                 <span class="ii-val">
-                  香港九龍灣企業廣場3期41樓<br />
-                  41/F,Enterprise Square Three, 39 Wang Chiu Road , Kowloon Bay,Kowloon ,Hong Kong
+                  41/F, Enterprise Square Three, 39 Wang Chiu Road, Kowloon Bay, Kowloon, Hong Kong
                 </span>
               </div>
             </div>
             <div class="info-item">
               <div class="ii-icon">🏛️</div>
               <div>
-                <div class="ii-label">監管</div>
-                <span class="ii-val">香港證監會（SFC）持牌證券商</span>
+                <div class="ii-label">Regulation</div>
+                <span class="ii-val">SFC (Hong Kong) licensed securities dealer</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="contact-form-panel card">
-          <h3 class="form-title">在線諮詢</h3>
-          <p class="form-sub">填寫下方表單，我們的業務團隊將在 1 個工作日內回復。</p>
+          <h3 class="form-title">Online Inquiry</h3>
+          <p class="form-sub">Fill in the form below and our business team will reply within 1 business day.</p>
           <form class="contact-form" @submit.prevent="submit">
             <div class="form-row">
               <div class="form-field">
-                <label>姓名 <em>*</em></label>
-                <input v-model="form.name" type="text" required placeholder="請輸入您的姓名" />
+                <label>Name <em>*</em></label>
+                <input v-model="form.name" type="text" required placeholder="Enter your name" />
               </div>
               <div class="form-field">
-                <label>公司名稱</label>
-                <input v-model="form.company" type="text" placeholder="請輸入公司名稱" />
+                <label>Company</label>
+                <input v-model="form.company" type="text" placeholder="Enter company name" />
               </div>
             </div>
             <div class="form-field">
-              <label>聯繫方式 <em>*</em></label>
-              <input v-model="form.contact" type="text" required placeholder="電話或郵箱" />
+              <label>Contact <em>*</em></label>
+              <input v-model="form.contact" type="text" required placeholder="Phone or email" />
             </div>
             <div class="form-field">
-              <label>合作意向</label>
+              <label>Partnership Intent</label>
               <select v-model="form.intent">
-                <option value="">請選擇合作類型</option>
-                <option>機構合作（銀行 / 券商）</option>
-                <option>DCM 債券承銷</option>
-                <option>資產管理（家族辦公室）</option>
-                <option>自營投資 / 做市</option>
-                <option>其他諮詢</option>
+                <option value="">Select partnership type</option>
+                <option>Institutional partnership (Bank / Broker)</option>
+                <option>DCM bond underwriting</option>
+                <option>Asset management (family office)</option>
+                <option>Proprietary investment / market making</option>
+                <option>Other inquiry</option>
               </select>
             </div>
             <div class="form-field">
-              <label>留言內容 <em>*</em></label>
+              <label>Message <em>*</em></label>
               <textarea
                 v-model="form.message"
                 rows="5"
                 required
-                placeholder="請描述您的需求或問題..."
+                placeholder="Describe your needs or questions..."
               />
             </div>
-            <button type="submit" class="primary-btn submit-btn">提交諮詢 →</button>
+            <button type="submit" class="primary-btn submit-btn">Submit Inquiry →</button>
           </form>
         </div>
       </div>

@@ -1,133 +1,133 @@
 <script setup lang="ts">
-const policyTitle = '全通易隱私政策'
+const policyTitle = 'ghkax Privacy Policy'
 
 const intro = [
-  '香港全通資產交易有限公司（英文名稱：Hong Kong Quantong Asset Trading Co., Limited，以下稱「本公司」或「我們」）重視您的個人資料及私隱保護。當您使用「全通易」流動應用程式及相關服務（以下稱「本應用」或「本服務」）時，我們可能會依照本政策收集、使用、儲存、共享及保護您的個人資料。',
-  '本政策旨在向您清楚説明本應用如何處理個人資料及裝置資料，包括我們收集哪些資料、如何使用資料、是否與第三方共享資料、資料安全措施、資料保存期限，以及您如何查詢、更正、刪除帳戶或行使其他資料權利。請您在使用本應用前仔細閲讀本政策。',
+  'ghkax Limited (hereinafter referred to as the "Company" or "we") values the protection of your personal data and privacy. When you use the "ghkax" mobile application and related services (hereinafter referred to as "this application" or "this service"), we may collect, use, store, share, and protect your personal data in accordance with this policy.',
+  'This policy aims to clearly explain how this application processes personal data and device information, including what information we collect, how we use it, whether we share it with third parties, data security measures, data retention periods, and how you may inquire about, correct, or delete your account or exercise other data rights. Please read this policy carefully before using this application.',
 ]
 
 const sections = [
   {
-    title: '一、適用範圍',
+    title: '1. Scope of Application',
     paragraphs: [
-      '本政策適用於本公司透過「全通易」流動應用程式及相關平臺向您提供的帳戶登入、身份核驗、業務辦理、資料上傳、交易查詢、客戶服務、安全風控及合規管理等服務。',
-      '本政策不適用於由第三方獨立提供的產品或服務。如本應用內存在跳轉至第三方網站、平臺或服務的連結，該等第三方服務適用其自身的私隱政策及服務條款，請您在使用前自行查閲。',
+      'This policy applies to the account login, identity verification, business processing, data upload, transaction inquiry, customer service, security risk control, and compliance management services provided by the Company to you through the "ghkax" mobile application and related platforms.',
+      'This policy does not apply to products or services independently provided by third parties. If this application contains links that redirect to third-party websites, platforms, or services, such third-party services are subject to their own privacy policies and terms of service; please review them before use.',
     ],
   },
   {
-    title: '二、我們可能收集的資料',
+    title: '2. Information We May Collect',
     paragraphs: [
-      '為向您提供服務並符合 Apple 對使用者資料透明度的要求，我們會依照合法、必要及適度原則，按具體功能場景收集以下資料：',
-      '帳戶及聯絡資料：如登入帳號、姓名、手機號碼、電子郵件地址、帳戶狀態及與帳戶相關的業務資料。',
-      '身份核驗及合規資料：如身份證明文件資料、證件影像、身份驗證結果、風險評估、合規審查、反洗錢及監管要求所需資料。',
-      '業務及交易資料：如您在本應用內提交、查詢或處理的申請、交易、委託、成交、清算、結算、持倉、資金、服務請求及相關業務記錄。',
-      '裝置及日誌資料：如裝置型號、作業系統版本、應用版本、網路狀態、登入時間、IP位址、操作日誌、崩潰日誌、服務呼叫記錄及安全風控所需技術資料。',
-      '上傳內容資料：如您主動上傳的圖片、檔案、音訊、視訊、證件影像、業務附件及其相關描述資料。',
-      '安全驗證資料：如驗證碼、登入驗證結果、裝置綁定資料、異常登入記錄及風險控制相關資料。',
-      '客戶服務資料：如您透過客服、電話、電郵或其他渠道提交的查詢、投訴、建議、處理結果及溝通記錄。',
-      '如您拒絕提供實現特定功能所必需的資料，可能導致相關功能或服務無法正常使用。',
+      'To provide you with services and to meet Apple\'s requirements for user data transparency, we will collect the following information in accordance with the principles of lawfulness, necessity, and proportionality, based on specific feature scenarios:',
+      'Account and contact information: such as login account, name, mobile phone number, email address, account status, and business information related to the account.',
+      'Identity verification and compliance information: such as identity document information, document images, identity verification results, risk assessment, compliance review, anti-money laundering, and information required by regulatory requirements.',
+      'Business and transaction information: such as applications, transactions, orders, trades, clearing, settlement, positions, funds, service requests, and related business records that you submit, query, or process within this application.',
+      'Device and log information: such as device model, operating system version, application version, network status, login time, IP address, operation logs, crash logs, service call records, and technical information required for security risk control.',
+      'Uploaded content information: such as images, files, audio, video, document images, business attachments, and related descriptive information that you actively upload.',
+      'Security verification information: such as verification codes, login verification results, device binding information, abnormal login records, and information related to risk control.',
+      'Customer service information: such as inquiries, complaints, suggestions, handling results, and communication records you submit through customer service, telephone, email, or other channels.',
+      'If you refuse to provide information necessary to enable specific features, the related features or services may not function properly.',
     ],
   },
   {
-    title: '三、我們如何收集和使用資料',
+    title: '3. How We Collect and Use Information',
     paragraphs: [
-      '我們可能在您註冊、登入、提交資料、辦理業務、查詢交易、上傳文件、聯絡客服或使用本應用其他功能時收集上述資料，並將資料用於以下用途：',
-      '協助您完成帳戶登入、身份認證、帳戶管理、業務辦理及服務使用。',
-      '向您提供資料查詢、交易處理、訊息通知、客戶服務、技術支援及安全保障。',
-      '處理您主動發起的資料上傳、文件提交、圖片儲存、檔案預覽及申請提交等操作。',
-      '進行身份識別、客戶盡職審查、合規審查、反洗錢、反欺詐、交易監控、安全驗證、風險監測及異常行為識別。',
-      '用於系統維護、故障排查、日誌分析、服務優化、資訊安全保障及提升應用穩定性。',
-      '處理客戶查詢、投訴、糾紛、審計、稽覈、內部管理及合規檢查。',
-      '在符合法律法規、監管要求、司法或行政機關要求的前提下，履行本公司作為持牌機構的法定、合規、審計、報告及資料保存義務。',
-      '未經您的明確同意，我們不會將您的個人資料用於與本服務無關的直接促銷用途。',
+      'We may collect the above information when you register, log in, submit information, process business, inquire about transactions, upload documents, contact customer service, or use other features of this application, and use the information for the following purposes:',
+      'To assist you with account login, identity authentication, account management, business processing, and service use.',
+      'To provide you with information inquiry, transaction processing, message notifications, customer service, technical support, and security protection.',
+      'To process data uploads, document submissions, image storage, file previews, application submissions, and other operations you initiate.',
+      'To perform identity identification, customer due diligence, compliance review, anti-money laundering, anti-fraud, transaction monitoring, security verification, risk monitoring, and abnormal behaviour identification.',
+      'For system maintenance, troubleshooting, log analysis, service optimisation, information security protection, and improving application stability.',
+      'To handle customer inquiries, complaints, disputes, audits, reviews, internal management, and compliance checks.',
+      'Subject to laws and regulations, regulatory requirements, and judicial or administrative authority requests, to fulfil the Company\'s statutory, compliance, audit, reporting, and data retention obligations as a licensed institution.',
+      'Without your explicit consent, we will not use your personal data for direct marketing purposes unrelated to this service.',
     ],
   },
   {
-    title: '四、我們使用的裝置權限',
+    title: '4. Device Permissions We Use',
     paragraphs: [
-      '為實現特定功能，本應用可能會申請或使用以下裝置權限。您可以自主決定是否授權；如您拒絕授權，相關功能可能無法使用，但不影響其他不依賴該權限的基礎功能。',
-      '相機權限：用於拍攝照片、上傳證件或提交業務影像資料。',
-      '相簿／儲存權限：用於選擇本地圖片、檔案或將圖片、視訊、業務資料儲存至您的裝置。',
-      '網路權限：用於連接伺服器、同步資料、提交業務請求及接收服務回應。',
-      '除非另行向您告知並依法取得必要授權，本應用不會主動申請定位、麥克風、通訊錄、行事曆、藍牙、剪貼簿等與現有服務無直接關聯的非必要權限。',
+      'To enable specific features, this application may request or use the following device permissions. You may decide whether to grant authorisation; if you refuse, the related features may be unavailable, but other basic features that do not rely on those permissions will not be affected.',
+      'Camera permission: used to take photos, upload identity documents, or submit business image materials.',
+      'Photo library / storage permission: used to select local images or files, or to save images, videos, and business data to your device.',
+      'Network permission: used to connect to servers, synchronise data, submit business requests, and receive service responses.',
+      'Unless otherwise notified to you and necessary authorisation is obtained in accordance with the law, this application will not proactively request location, microphone, contacts, calendar, Bluetooth, clipboard, or other non-essential permissions that are not directly related to existing services.',
     ],
   },
   {
-    title: '五、資料分享、轉讓及披露',
+    title: '5. Data Sharing, Transfer, and Disclosure',
     paragraphs: [
-      '我們不會出售您的個人資料。除以下情形外，未經您同意，我們不會向無關第三方分享、轉讓或公開披露您的個人資料：',
-      '為實現本應用核心功能，在必要範圍內向技術服務提供方提供支援，例如雲端服務、系統維護、短信或驗證碼服務、文件或圖片處理、日誌及崩潰分析、客服系統、安全風控等。',
-      '為履行交易、清算、結算、託管、審計、法律、合規、風險控制、客戶服務及投訴處理等業務需要，向相關機構或專業服務提供者提供必要資料。',
-      '根據法律法規、監管規則、司法程序、行政機關或監管機構要求提供。',
-      '為保護您、其他使用者、本公司或公眾的人身、財產、資訊安全及合法權益所必需。',
-      '因合併、收購、資產轉讓、重組或類似交易需要轉移個人資料時，我們會要求新的資料接收方繼續遵守本政策；如變更個人資料使用目的，我們將依法另行通知您並取得必要同意。',
-      '如本應用接入第三方 SDK 或第三方服務，我們會要求相關服務提供方遵守保密及資料保護義務，並僅在實現本政策所述目的的必要範圍內處理個人資料。第三方 SDK 或服務的具體名稱、資料類型、使用目的及第三方私隱政策連結，將以本應用內公示或本公司另行公佈的第三方服務清單為準。',
+      'We do not sell your personal data. Except in the following circumstances, we will not share, transfer, or publicly disclose your personal data to unrelated third parties without your consent:',
+      'To provide support to technical service providers within the necessary scope to enable the core features of this application, such as cloud services, system maintenance, SMS or verification code services, file or image processing, log and crash analysis, customer service systems, and security risk control.',
+      'To provide necessary information to relevant institutions or professional service providers to fulfil business needs such as trading, clearing, settlement, custody, audit, legal, compliance, risk control, customer service, and complaint handling.',
+      'To provide information as required by laws and regulations, regulatory rules, judicial proceedings, administrative authorities, or regulatory bodies.',
+      'Where necessary to protect the personal, property, and information security and legitimate rights and interests of you, other users, the Company, or the public.',
+      'Where personal data needs to be transferred due to merger, acquisition, asset transfer, restructuring, or similar transactions, we will require the new data recipient to continue to comply with this policy; if the purpose of using personal data changes, we will separately notify you and obtain necessary consent in accordance with the law.',
+      'If this application integrates third-party SDKs or third-party services, we will require the relevant service providers to comply with confidentiality and data protection obligations, and to process personal data only within the scope necessary to achieve the purposes described in this policy. The specific names, data types, purposes of use, and third-party privacy policy links of third-party SDKs or services will be based on the third-party service list published within this application or separately announced by the Company.',
     ],
   },
   {
-    title: '六、資料安全',
+    title: '6. Data Security',
     paragraphs: [
-      '我們採取合理可行的安全措施保護您的個人資料，包括但不限於身份驗證、權限控制、加密傳輸、日誌監控、資料備份、內部審批、保密管理及安全審計，以盡力防止資料遭到未經授權存取、使用、披露、竄改、損毀或遺失。',
-      '但請您理解，互聯網傳輸及電子儲存並非絕對安全。您需要妥善保管帳號、密碼、驗證碼及其他身份憑證，避免向他人披露。',
+      'We take reasonably practicable security measures to protect your personal data, including but not limited to identity authentication, access control, encrypted transmission, log monitoring, data backup, internal approval, confidentiality management, and security audits, to endeavour to prevent unauthorised access, use, disclosure, alteration, destruction, or loss of data.',
+      'However, please understand that internet transmission and electronic storage are not absolutely secure. You need to keep your account, password, verification codes, and other identity credentials securely and avoid disclosing them to others.',
     ],
   },
   {
-    title: '七、資料保存期限',
+    title: '7. Data Retention Period',
     paragraphs: [
-      '我們會在實現服務目的及履行法律、監管、審計、反洗錢、交易記錄保存、爭議處理及持牌機構合規要求所必需的期限內保存您的個人資料。',
-      '作為持牌機構，本公司可能需按照適用法律法規、監管規則及內部合規要求保存客戶資料、交易及業務記錄。除法律法規或監管要求另有規定外，相關資料保存期限一般不少於七（7）年。保存期限屆滿後，我們將根據適用要求對相關資料進行刪除、匿名化處理或依法繼續留存。',
-      '如您提出刪除帳戶或資料申請，但因安全、反欺詐、反洗錢、交易記錄保存、爭議處理、審計或法規遵從等正當理由需要繼續保存部分資料，我們將在必要範圍內依法保存，並限制其用於與保存目的無關的其他用途。',
+      'We will retain your personal data for the period necessary to achieve the service purposes and to fulfil legal, regulatory, audit, anti-money laundering, transaction record retention, dispute handling, and licensed institution compliance requirements.',
+      'As a licensed institution, the Company may need to retain customer information, transaction, and business records in accordance with applicable laws and regulations, regulatory rules, and internal compliance requirements. Unless otherwise required by laws, regulations, or regulatory requirements, the retention period for relevant data is generally not less than seven (7) years. After the retention period expires, we will delete, anonymise, or continue to retain the relevant data in accordance with applicable requirements.',
+      'If you request account or data deletion, but certain data needs to continue to be retained for legitimate reasons such as security, anti-fraud, anti-money laundering, transaction record retention, dispute handling, audit, or regulatory compliance, we will retain such data within the necessary scope in accordance with the law and restrict its use for other purposes unrelated to the retention purpose.',
     ],
   },
   {
-    title: '八、您的權利及選擇',
+    title: '8. Your Rights and Choices',
     paragraphs: [
-      '在適用法律法規允許的範圍內，您對自己的個人資料享有以下權利：',
-      '查詢或查閲我們持有的您的個人資料。',
-      '要求更正或更新不準確、不完整的個人資料。',
-      '透過裝置系統設定撤回相機、相簿／儲存等權限授權；撤回授權後，依賴該權限的功能可能無法使用。',
-      '在符合法律法規、監管要求及業務規則的情況下，申請刪除部分資料或註銷帳戶。',
-      '就個人資料處理問題向我們提出查詢、意見或投訴。',
-      '基於身份核驗、交易安全、監管保存、爭議處理、審計及反洗錢等要求，我們可能需要核實您的身份後再處理相關申請，並可能依法拒絕、限制或延遲處理部分請求。',
+      'To the extent permitted by applicable laws and regulations, you have the following rights regarding your personal data:',
+      'Inquire about or access the personal data we hold about you.',
+      'Request correction or updating of inaccurate or incomplete personal data.',
+      'Withdraw camera, photo library / storage, and other permission authorisations through your device system settings; after withdrawal, features that rely on those permissions may become unavailable.',
+      'Request deletion of certain data or account cancellation where permitted by laws and regulations, regulatory requirements, and business rules.',
+      'Raise inquiries, comments, or complaints with us regarding personal data processing.',
+      'Due to identity verification, transaction security, regulatory retention, dispute handling, audit, and anti-money laundering requirements, we may need to verify your identity before processing related requests, and may lawfully refuse, restrict, or delay the processing of certain requests.',
     ],
   },
   {
-    title: '九、帳戶及資料刪除',
+    title: '9. Account and Data Deletion',
     paragraphs: [
-      '如您需要刪除帳戶或申請刪除與帳戶相關的個人資料，您可以透過以下方式提交申請：',
-      '透過本應用內提供的「帳戶刪除」或「資料刪除」功能提交申請。',
-      '透過本公司官方網站公示的帳戶刪除頁面提交申請：/account-deletion。',
-      '如您無法使用上述入口，可發送電郵至 ops@hkax.com.hk 聯絡我們。',
-      '我們將在覈實您的身份及申請內容後，於七（7）個工作日內處理或回覆您的申請。刪除帳戶後，與該帳戶相關且無需依法繼續保存的個人資料將被刪除或匿名化處理。',
+      'If you need to delete your account or request deletion of personal data related to your account, you may submit a request through the following means:',
+      'Submit a request through the "Account Deletion" or "Data Deletion" feature provided within this application.',
+      'Submit a request through the account deletion page published on the Company\'s official website: /account-deletion.',
+      'If you are unable to use the above portals, you may email us at ops@ghkax.com.',
+      'After verifying your identity and the content of your request, we will process or respond to your request within seven (7) working days. After account deletion, personal data related to that account that does not need to continue to be retained by law will be deleted or anonymised.',
     ],
   },
   {
-    title: '十、未成年人保護',
+    title: '10. Protection of Minors',
     paragraphs: [
-      '本應用主要面向具備相應資格並符合本公司業務規則的使用者，不以未成年人作為主要服務對象。如您為未成年人，請在監護人指導下閲讀本政策，並在取得監護人同意後使用相關服務。',
-      '如監護人發現未成年人未經同意向我們提交個人資料，或希望查詢、更正或刪除未成年人相關資料，請透過本政策所列聯絡方式與我們聯繫，我們將在覈實身份及具體情況後依法處理。',
+      'This application is primarily intended for users who have the relevant qualifications and comply with the Company\'s business rules, and is not primarily targeted at minors. If you are a minor, please read this policy under the guidance of a guardian and use the related services only after obtaining the guardian\'s consent.',
+      'If a guardian discovers that a minor has submitted personal data to us without consent, or wishes to inquire about, correct, or delete data related to a minor, please contact us through the contact methods listed in this policy, and we will handle the matter in accordance with the law after verifying identity and the specific circumstances.',
     ],
   },
   {
-    title: '十一、政策更新',
+    title: '11. Policy Updates',
     paragraphs: [
-      '我們可能根據法律法規、監管要求、業務調整、產品功能變化、技術更新或應用商店要求對本政策進行修訂。更新後的政策將透過本應用、官方網站或其他適當方式發布，並自公佈或通知所載日期起生效。',
-      '如本政策發生重大變更，例如個人資料處理目的、處理方式、資料類型、共享對象或使用者權利行使方式發生重要變化，我們將以彈窗、站內通知、公告或其他合理方式提醒您。',
-      '我們亦會在本應用資料處理方式發生變更時，及時更新 Apple 管理中心的資料安全表單及相關上架資料，以保持對外披露內容與實際情況一致。',
+      'We may revise this policy based on laws and regulations, regulatory requirements, business adjustments, product feature changes, technical updates, or app store requirements. Updated policies will be published through this application, the official website, or other appropriate means, and will take effect from the date stated in the publication or notice.',
+      'If material changes are made to this policy, such as important changes to the purposes of personal data processing, processing methods, data types, sharing parties, or how users exercise their rights, we will remind you via pop-up, in-app notification, announcement, or other reasonable means.',
+      'We will also promptly update the App Privacy details and related listing information in App Store Connect when the way this application processes data changes, so that externally disclosed content remains consistent with actual practices.',
     ],
   },
   {
-    title: '十二、如何聯絡我們',
+    title: '12. How to Contact Us',
     paragraphs: [
-      '如您對本政策、個人資料保護、帳戶刪除或資料權利行使有任何疑問、意見、建議或投訴，請透過以下方式與我們聯繫：',
-      '資料使用者／營運方：香港全通資產交易有限公司',
-      '英文名稱：Hong Kong Quantong Asset Trading Co., Limited',
-      '通訊地址：香港九龍九龍灣宏照道39號企業廣場三期41F',
-      '英文地址：41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong',
-      '電話：(852) 2331 2862',
-      '傳真：(852) 2331 2683',
-      '電郵：ops@hkax.com.hk',
-      '我們將在收到您的請求後，於合理期限內進行核實、處理並回覆。',
+      'If you have any questions, comments, suggestions, or complaints regarding this policy, personal data protection, account deletion, or the exercise of data rights, please contact us through the following means:',
+      'Data user / operator: ghkax Limited',
+      'English name: ghkax Limited',
+      'Correspondence address: 41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong',
+      'English address: 41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong',
+      'Tel: (852) 2331 2862',
+      'Fax: (852) 2331 2683',
+      'Email: ops@ghkax.com',
+      'After receiving your request, we will verify, process, and respond within a reasonable period.',
     ],
   },
 ]
@@ -137,10 +137,10 @@ const sections = [
   <div class="page privacy-page">
     <section class="page-hero">
       <div class="container page-hero-inner">
-        <div class="ph-breadcrumb">首頁 / 隱私政策</div>
-        <h1 class="ph-title">全通易隱私政策</h1>
+        <div class="ph-breadcrumb">Home / Privacy Policy</div>
+        <h1 class="ph-title">ghkax Privacy Policy</h1>
         <p class="ph-desc">
-          香港全通資產交易有限公司重視您的個人資料及私隱保護。當您使用「全通易」流動應用程式及相關服務時，我們可能會依照本政策收集、使用、儲存、共享及保護您的個人資料。
+          ghkax Limited values the protection of your personal data and privacy. When you use the "ghkax" mobile application and related services, we may collect, use, store, share, and protect your personal data in accordance with this policy.
         </p>
       </div>
     </section>
@@ -148,7 +148,7 @@ const sections = [
       <div class="container">
         <div class="policy-shell">
           <div class="policy-meta">
-            <span class="badge badge-blue">公開頁面</span>
+            <span class="badge badge-blue">Public Page</span>
           </div>
           <div class="policy-intro card">
             <h2>{{ policyTitle }}</h2>

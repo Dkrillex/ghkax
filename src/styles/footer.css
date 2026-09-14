@@ -2,7 +2,7 @@
 .footer-main{padding:60px 0 48px;border-bottom:1px solid rgba(255,255,255,.08)}
 .footer-main-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;align-items:start}
 .footer-logo{margin-bottom:18px}
-.fl-img{height:100px;width:auto;display:block}
+.fl-img{height:72px;width:auto;max-width:220px;display:block;object-fit:contain;border-radius:8px}
 .footer-tagline{font-size:13.5px;color:#ffffff8c;line-height:1.8;margin-bottom:22px}
 .footer-contact{display:flex;flex-direction:column;gap:10px}
 .fc-item{display:flex;align-items:flex-start;gap:8px;font-size:13px}

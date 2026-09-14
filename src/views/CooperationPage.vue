@@ -2,21 +2,21 @@
 const winwinTop = [
   {
     num: '01',
-    title: '產品全',
+    title: 'Full Product Range',
     points: [
-      '門類齊：股+債；公募私募；證券化、數位化票據',
-      '選擇多：各種發行主體、久期、收益風險組合、定活二便。',
-      '平臺自帶流動性。',
-      '金融機構接入平臺，即在産品供應及次級市場流動性方面，獲強大賦能！',
+      'Complete categories: equities + bonds; public & private funds; securitized and digitized notes',
+      'More choices: diverse issuers, tenors, return-risk profiles, and demand/term flexibility.',
+      'Built-in platform liquidity.',
+      'Financial institutions joining the platform gain strong empowerment in product supply and secondary-market liquidity!',
     ],
   },
   {
     num: '02',
-    title: '客戶多',
+    title: 'More Clients',
     points: [
-      '活躍現有客戶（避免銷戶）',
-      '引流新增客戶，提升客戶體驗。',
-      '共富客戶資源新概念：平臺客戶為我所用/為我創造價值。',
+      'Activate existing clients (reduce account closures)',
+      'Attract new clients and improve client experience.',
+      'Shared client resources: platform clients create value for partners.',
     ],
   },
 ]
@@ -24,24 +24,24 @@ const winwinTop = [
 const winwinBottom = [
   {
     num: '03',
-    title: '成本低',
+    title: 'Lower Costs',
     points: [
-      '系統開發/運維成本大幅度降低',
-      '資産發行成本降低',
-      '獲客成本降低',
-      '客戶服務成本降低',
-      '合規及交易監控成本降低',
-      '行銷推廣成本大幅降低',
+      'Significantly lower system development / operations costs',
+      'Lower asset issuance costs',
+      'Lower client acquisition costs',
+      'Lower client service costs',
+      'Lower compliance and trade monitoring costs',
+      'Significantly lower marketing and promotion costs',
     ],
   },
   {
     num: '04',
-    title: '賺到錢',
+    title: 'Earn More',
     points: [
-      'DCM固收産品承銷收入會大幅度增長',
-      'FICC産品經紀業務傭金收入大幅度增長',
-      '基於活躍客戶數及AUM的大幅度增長，融資/託管/交易收入大幅度增長',
-      '投行業務/資産管理業務大幅度增長',
+      'Substantial growth in DCM fixed-income underwriting revenue',
+      'Substantial growth in FICC brokerage commission revenue',
+      'Based on strong growth in active clients and AUM, financing / custody / trading revenue grows substantially',
+      'Substantial growth in investment banking / asset management businesses',
     ],
   },
 ]
@@ -49,37 +49,37 @@ const winwinBottom = [
 const dcmPoints = [
   {
     num: '01',
-    title: '專案承攬易',
+    title: 'Easier Deal Origination',
     points: [
-      '標準化大類專案模式，如綠色金融/資產支持證券化，適合大規模推介發行標準透明',
-      '降低溝通成本，提升成功率',
-      '平臺發行，線上銷售，效率高',
+      'Standardized major project models, such as green finance / ABS, suited for large-scale introduction with transparent issuance standards',
+      'Lower communication costs and higher success rates',
+      'Platform issuance and online sales for high efficiency',
     ],
   },
   {
     num: '02',
-    title: '轉案來源多',
+    title: 'More Referral Sources',
     points: [
-      '平臺産品創新，吸引眾多的發行需求，供平臺DCM承銷',
-      '全港50多家DCM承攬的專案，需要平臺各家共同發行、銷售平臺溝通成本低，合作效率高',
+      'Platform product innovation attracts substantial issuance demand for DCM underwriting',
+      '50+ DCM origination projects across Hong Kong can be co-issued and sold via the platform — low communication cost, high collaboration efficiency',
     ],
   },
   {
     num: '03',
-    title: '發行易成本低',
+    title: 'Easier Issuance, Lower Cost',
     points: [
-      '標準化發行檔案',
-      '統一第三方專業機構服務採購',
-      '發行效率高，發行成本大幅度下降',
+      'Standardized issuance documentation',
+      'Unified procurement of third-party professional services',
+      'Higher issuance efficiency and substantially lower issuance costs',
     ],
   },
   {
     num: '04',
-    title: '易流轉 促銷售',
+    title: 'Easier Circulation, Better Sales',
     points: [
-      '投資者持倉在平臺上架，次級市場流轉效率高',
-      '平臺持倉自帶流動性，回報要求降低',
-      '做市商及結構化發行，大幅增加次級市場流動性',
+      'Investor holdings listed on the platform enable efficient secondary-market circulation',
+      'Platform holdings carry built-in liquidity, lowering return requirements',
+      'Market makers and structured issuance substantially increase secondary-market liquidity',
     ],
   },
 ]
@@ -87,34 +87,34 @@ const dcmPoints = [
 const investPoints = [
   {
     num: '01',
-    title: '低成本融入資金',
+    title: 'Low-Cost Funding',
     points: [
-      '固定收益金融債做底層，在平臺發活期産品，融入低成本資金',
-      '資産為定期高息/負債為活期低息',
+      'Use fixed-income financial bonds as the underlying, issue demand products on the platform, and raise low-cost funds',
+      'Assets are term/high-yield; liabilities are demand/low-cost',
     ],
   },
   {
     num: '02',
-    title: '批發轉零售賺差價',
+    title: 'Wholesale-to-Retail Spread',
     points: [
-      '大手買入金融債券/國債，在平臺零售賣出，批發轉零售，賺差價',
-      '自營持倉無風險套利',
+      'Buy financial bonds / government bonds in bulk and sell retail on the platform — wholesale to retail, capturing the spread',
+      'Risk-free arbitrage on proprietary holdings',
     ],
   },
   {
     num: '03',
-    title: '標準化產品 低風險配資',
+    title: 'Standardized Products, Low-Risk Financing',
     points: [
-      '平臺提供産品組合融資方案，配合動態盯市調整融資比率，利於券商敞做融資業務有效管理風險',
-      '平臺標準化産品，券商可極低成本，批量獲客',
+      'Platform provides product portfolio financing solutions with dynamic mark-to-market financing ratios, helping brokers manage financing risk effectively',
+      'With standardized platform products, brokers can acquire clients in bulk at very low cost',
     ],
   },
   {
     num: '04',
-    title: '可選産品多 組織者費用低',
+    title: 'More Products, Lower Organizer Fees',
     points: [
-      '平臺彙集各類發行主體、信用等級、産品條款的産品，可選産品多、配資門檻低',
-      '平臺買方無任何費用，組織者效率高，費用低',
+      'The platform aggregates products across issuers, credit ratings, and terms — more choices, lower financing thresholds',
+      'No fees on the buy side; high organizer efficiency and low fees',
     ],
   },
 ]
@@ -122,28 +122,28 @@ const investPoints = [
 const partnerBenefits = [
   {
     num: '01',
-    title: '產品服務穩健交易',
-    desc: '平臺產品持續性接入平臺可快速獲得完整產品供給，散戶及散戶全穩健交易。',
+    title: 'Stable Product & Trading Services',
+    desc: 'Continuous product connectivity lets partners quickly access a complete product supply for stable retail trading.',
   },
   {
     num: '02',
-    title: '資產端全面',
-    desc: '散戶端全面接入通路，債券交易 T+0 交易，散戶端即時交易及散戶端一鍵通、一頁通。',
+    title: 'Comprehensive Asset Side',
+    desc: 'Full retail access pathways, T+0 bond trading, instant retail trading, and one-click / one-page connectivity.',
   },
   {
     num: '03',
-    title: '長期管控高效',
-    desc: '全球穩健增長管控風控流程，即時計算，即時交易，長期管控高效。',
+    title: 'Long-Term Efficient Control',
+    desc: 'Global risk-control processes for stable growth — real-time calculation, real-time trading, and efficient long-term oversight.',
   },
   {
     num: '04',
-    title: '營運成本降低',
-    desc: '更多散戶機構穩健系統管控，推薦投資者無需接入系統管控，成本降低。',
+    title: 'Lower Operating Costs',
+    desc: 'More retail institutions under stable system controls; recommended investors need not integrate control systems — lower costs.',
   },
   {
     num: '05',
-    title: '一站式交易服務平臺',
-    desc: '散戶端即時交易服務散戶端全面，一鍵通一頁通交易即時通達，服務散戶投資者。',
+    title: 'One-Stop Trading Service Platform',
+    desc: 'Instant retail trading services with full coverage — one-click, one-page, real-time connectivity for retail investors.',
   },
 ]
 </script>
@@ -152,10 +152,10 @@ const partnerBenefits = [
   <div class="page">
     <section class="page-hero">
       <div class="container page-hero-inner">
-        <div class="ph-breadcrumb">首頁 / 合作價值</div>
-        <h1 class="ph-title">合作價值</h1>
+        <div class="ph-breadcrumb">Home / Cooperation</div>
+        <h1 class="ph-title">Cooperation Value</h1>
         <p class="ph-desc">
-          為銀行、券商與渠道夥伴提供產品供給、系統輸出與分銷能力，實現共贏。
+          Providing product supply, system output, and distribution capabilities for banks, brokers, and channel partners to achieve mutual success.
         </p>
       </div>
     </section>
@@ -166,8 +166,8 @@ const partnerBenefits = [
           <div class="winwin-en">win-win<br />Cooperation</div>
           <div class="winwin-divider"></div>
           <div class="winwin-zh">
-            <div class="winwin-subtitle">金融機構(銀行/券商)</div>
-            <h2 class="winwin-title">合作共贏</h2>
+            <div class="winwin-subtitle">Financial Institutions (Banks / Brokers)</div>
+            <h2 class="winwin-title">Win-Win Cooperation</h2>
             <div class="winwin-underline"></div>
           </div>
         </div>
@@ -205,27 +205,27 @@ const partnerBenefits = [
     <section class="section section-soft">
       <div class="container">
         <div class="dcm-header">
-          <div class="dcm-header-sub">金融機構</div>
-          <h2 class="dcm-header-title">DCM債券承銷</h2>
+          <div class="dcm-header-sub">Financial Institutions</div>
+          <h2 class="dcm-header-title">DCM Bond Underwriting</h2>
           <div class="dcm-header-underline"></div>
         </div>
         <div class="dcm-mode-wrap">
-          <div class="dcm-mode-label">DCM業務模式 發生變化</div>
+          <div class="dcm-mode-label">DCM Business Model Has Changed</div>
           <div class="dcm-mode-flow">
             <div class="dcm-mode-old">
-              <div class="dcm-mode-old-label">原業務模式</div>
+              <div class="dcm-mode-old-label">Previous Model</div>
               <div class="dcm-mode-old-steps">
-                <div class="dcm-step">承攬</div>
+                <div class="dcm-step">Origination</div>
                 <span class="dcm-plus">+</span>
-                <div class="dcm-step">承做</div>
+                <div class="dcm-step">Execution</div>
                 <span class="dcm-plus">+</span>
-                <div class="dcm-step">承銷</div>
+                <div class="dcm-step">Underwriting</div>
               </div>
             </div>
             <div class="dcm-arrow">→</div>
             <div class="dcm-mode-new">
-              <div class="dcm-mode-new-label">現只需</div>
-              <div class="dcm-step dcm-step-active">承攬 •</div>
+              <div class="dcm-mode-new-label">Now Only Need</div>
+              <div class="dcm-step dcm-step-active">Origination •</div>
             </div>
           </div>
         </div>
@@ -249,8 +249,8 @@ const partnerBenefits = [
     <section class="section section-white">
       <div class="container">
         <div class="invest-header">
-          <div class="invest-header-sub">金融機構</div>
-          <h2 class="invest-header-title">自營投資/做市</h2>
+          <div class="invest-header-sub">Financial Institutions</div>
+          <h2 class="invest-header-title">Proprietary Investment / Market Making</h2>
           <div class="invest-header-en">HOUSE A/C INVESTMENT/MARKET MAKING</div>
           <div class="invest-header-underline"></div>
         </div>
@@ -274,8 +274,8 @@ const partnerBenefits = [
     <section class="section section-white">
       <div class="container">
         <div class="partner-header">
-          <div class="partner-header-sub">散戶機構</div>
-          <h2 class="partner-header-title">合作夥伴（散戶機構）價值</h2>
+          <div class="partner-header-sub">Retail Institutions</div>
+          <h2 class="partner-header-title">Partner (Retail Institution) Value</h2>
           <div class="partner-header-en">PARTNER BENEFITS</div>
           <div class="partner-header-underline"></div>
         </div>

@@ -1,15 +1,15 @@
-# 全通資產交易平臺（HKAX）官网复刻
+# ghkax
 
-基于 Vue 3 + Vite + Vue Router 的静态营销站复刻，参考 https://www.hkax.com.hk/
+Vue 3 + Vite + Vue Router marketing site for the ghkax brand.
 
-## 开发
+## Develop
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 构建
+## Build
 
 ```bash
 npm run build

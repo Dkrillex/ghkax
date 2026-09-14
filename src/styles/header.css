@@ -12,7 +12,7 @@
 .main-nav-wrap{background:#fff;border-bottom:2px solid var(--border-light);transition:box-shadow .3s}
 .main-nav-inner{display:flex;align-items:center;height:64px;gap:0}
 .logo-wrap{display:flex;align-items:center;text-decoration:none;flex-shrink:0;margin-right:32px}
-.logo-img{height:60px;width:150px;display:block}
+.logo-img{height:48px;width:auto;max-width:180px;display:block;object-fit:contain;border-radius:6px}
 .nav-menu{display:flex;align-items:center;gap:2px;flex:1}
 .nav-item{position:relative;padding:8px 14px;border-radius:6px;font-size:14.5px;font-weight:500;color:var(--text);text-decoration:none;cursor:pointer;transition:background .18s,color .18s;white-space:nowrap;display:flex;align-items:center;gap:3px}
 .nav-item:hover,.nav-item.router-link-active{background:#5b3de50f;color:var(--primary)}

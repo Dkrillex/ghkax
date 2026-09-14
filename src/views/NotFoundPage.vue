@@ -3,8 +3,8 @@
     <div class="container">
       <div class="card not-found-card">
         <h2>404</h2>
-        <p>抱歉，您訪問的頁面不存在。</p>
-        <RouterLink to="/" class="primary-btn">返回首頁</RouterLink>
+        <p>Sorry, the page you visited does not exist.</p>
+        <RouterLink to="/" class="primary-btn">Back to Home</RouterLink>
       </div>
     </div>
   </div>

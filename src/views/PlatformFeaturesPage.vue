@@ -6,104 +6,104 @@ import pfBroker from '../assets/pf-broker.png'
 const products = [
   {
     icon: '💰',
-    name: '活利得',
-    en: 'SmartWallet',
-    desc: '存款證 · 活期理財，多種利率選擇，靈活存取',
-    tags: ['活期', '定期', '存款證 CDs'],
+    name: 'Smart Wallet',
+    en: 'CDs · Flexible Savings',
+    desc: 'Certificates of deposit with flexible access and multiple rate options',
+    tags: ['Demand', 'Term', 'CDs'],
   },
   {
     icon: '📈',
     name: 'iStock',
-    en: 'iStock',
-    desc: '港股 / 美股 / A股，AH溢價指數，實時行情',
-    tags: ['港股', '美股', 'A股互通'],
+    en: 'HK / US / A-shares',
+    desc: 'Hong Kong, US and A-shares with AH premium index and real-time quotes',
+    tags: ['HK Stocks', 'US Stocks', 'A-shares'],
   },
   {
     icon: '🪙',
-    name: '愛黃金',
-    en: 'iGold',
-    desc: '實物黃金零售，港金 / 國際金 / 上海金',
-    tags: ['港金', '國際金', '上海金'],
+    name: 'i-Gold',
+    en: 'Physical Gold',
+    desc: 'Physical gold retail covering HK gold, international gold and Shanghai gold',
+    tags: ['HK Gold', 'International', 'Shanghai'],
   },
   {
     icon: '📜',
-    name: '債券易',
+    name: 'Bond Trading',
     en: 'EasyBond',
-    desc: '債券即時交易，公司債 / 金融債 / ABS',
-    tags: ['公司債', '金融債', 'ABS'],
+    desc: 'Real-time bond trading for corporate, financial and ABS products',
+    tags: ['Corporate', 'Financial', 'ABS'],
   },
   {
     icon: '📊',
-    name: '基金易',
+    name: 'Fund Trading',
     en: 'EasyFund',
-    desc: '基金份額即時交易，公募 / 私募',
-    tags: ['公募基金', '私募基金', '即時交易'],
+    desc: 'Real-time trading of public and private fund units',
+    tags: ['Public Funds', 'Private Funds', 'Real-time'],
   },
 ]
 
 const guards = [
   {
     icon: '🛡️',
-    title: 'AML / KYC 合規保障',
-    desc: '嚴格遵循反洗錢及客戶身份識別法規，保障交易安全與合規',
+    title: 'AML / KYC Compliance',
+    desc: 'Strict adherence to anti-money laundering and customer identification regulations to ensure secure and compliant trading',
   },
   {
     icon: '📊',
-    title: '股票(港股/美/A股)',
-    desc: '港股、美股、A股互通，直接入市做市交易',
+    title: 'Equities (HK / US / A-shares)',
+    desc: 'Interoperability across HK, US, and A-shares with direct market making and trading',
   },
   {
     icon: '⚡',
-    title: '做市商義務',
-    desc: '持續雙向報價，保障市場深度與流動性，撮合效率高',
+    title: 'Market Maker Obligations',
+    desc: 'Continuous two-way quotes to ensure market depth and liquidity with efficient matching',
   },
   {
     icon: '🔒',
-    title: '即時結算',
-    desc: 'T+0 即時清結算，中央託管銀行 CMU 直連，資金安全',
+    title: 'Instant Settlement',
+    desc: 'T+0 real-time clearing and settlement, direct CMU bank custody connectivity, and fund safety',
   },
   {
     icon: '🧠',
-    title: '風控管理',
-    desc: '智能風控與實時監控，動態盯市調整融資比率',
+    title: 'Risk Management',
+    desc: 'Intelligent risk control and real-time monitoring with dynamic mark-to-market financing ratios',
   },
   {
     icon: '🌐',
-    title: '全通路服務',
-    desc: 'HTTPS/JSON 接口 + H5/API 接入，直接入市即時交易',
+    title: 'End-to-End Services',
+    desc: 'HTTPS/JSON APIs + H5/API access for direct market entry and instant trading',
   },
 ]
 
 const techs = [
   {
     icon: '🔐',
-    title: 'OAUTH 2.0 + JWT 安全認證',
-    desc: '標準化安全認證協議，保障用戶身份與交易數據安全，100% 精確不漏單',
+    title: 'OAUTH 2.0 + JWT Security Auth',
+    desc: 'Standardized secure authentication protocols protecting user identity and trading data — 100% accurate with zero missed orders',
   },
   {
     icon: '📋',
-    title: '網絡戶籍系統 KYC/AML',
-    desc: '自動化客戶身份核實與合規審查，批量高效處理',
+    title: 'Online Onboarding KYC/AML',
+    desc: 'Automated customer identity verification and compliance screening with efficient batch processing',
   },
   {
     icon: '🧮',
-    title: '智能評算 風控評分',
-    desc: 'AI驅動智能風控評算引擎，實時風險評估與動態調整',
+    title: 'Smart Risk Scoring',
+    desc: 'AI-driven intelligent risk scoring engine with real-time assessment and dynamic adjustment',
   },
   {
     icon: '💼',
-    title: '採購財政服務 產品分銷',
-    desc: '一站式產品採購與分銷管理，支持多渠道分銷配置',
+    title: 'Procurement & Product Distribution',
+    desc: 'One-stop product procurement and distribution management with multi-channel configuration',
   },
   {
     icon: '⚙️',
-    title: '自動化分銷設置',
-    desc: '產品上架、分銷規則、費用配置全自動化，降低運營成本',
+    title: 'Automated Distribution Setup',
+    desc: 'Fully automated product listing, distribution rules, and fee configuration to reduce operating costs',
   },
   {
     icon: '✅',
-    title: '直連 100% 精確不漏單',
-    desc: '全直連交易處理，確保每一筆訂單精確執行，零漏單零差錯',
+    title: 'Direct Link · 100% Accurate',
+    desc: 'Fully direct-connected trade processing ensuring every order executes precisely — zero missed orders, zero errors',
   },
 ]
 </script>
@@ -113,10 +113,10 @@ const techs = [
     <section class="pf-hero">
       <div class="container">
         <div class="pf-hero-en">Platform Features</div>
-        <h1 class="pf-hero-title">平臺功能</h1>
+        <h1 class="pf-hero-title">Platform Features</h1>
         <div class="pf-hero-underline"></div>
         <p class="pf-hero-desc">
-          HKAX 全通資產交易平臺為三類用戶提供差異化接入與服務——C端用戶通過經紀商接入，做市商直接接入，經紀商代客交易接入。
+          ghkax provides differentiated access and services for three user types—retail users via brokers, market makers with direct access, and brokers trading on behalf of clients.
         </p>
       </div>
     </section>
@@ -126,7 +126,7 @@ const techs = [
         <div class="pf-sec-header">
           <span class="pf-sec-num">01</span>
           <div class="pf-sec-text">
-            <h2 class="pf-sec-title">C端用戶（通過經紀商接入平臺）</h2>
+            <h2 class="pf-sec-title">Retail Users (Access via Broker)</h2>
             <p class="pf-sec-sub">Retail Users · Access via Broker</p>
           </div>
           <div class="pf-sec-line"></div>
@@ -134,26 +134,26 @@ const techs = [
         <div class="pf-flow">
           <div class="pf-flow-node pf-flow-app">
             <div class="pf-flow-icon">📱</div>
-            <h4>第三方APP</h4>
-            <p>經紀商自有品牌APP</p>
+            <h4>Third-Party APP</h4>
+            <p>Broker’s branded APP</p>
           </div>
           <div class="pf-flow-arrow">→</div>
           <div class="pf-flow-node pf-flow-broker">
             <div class="pf-flow-icon">🏦</div>
-            <h4>經紀商</h4>
-            <p>券商/銀行</p>
+            <h4>Broker</h4>
+            <p>Securities firm / Bank</p>
           </div>
           <div class="pf-flow-arrow">→</div>
           <div class="pf-flow-node pf-flow-platform">
             <div class="pf-flow-icon">🔷</div>
-            <h4>全通資產交易平臺</h4>
-            <p>HKAX</p>
+            <h4>Trading Platform</h4>
+            <p>ghkax</p>
           </div>
           <div class="pf-flow-arrow">→</div>
           <div class="pf-flow-node pf-flow-products">
             <div class="pf-flow-icon">📦</div>
-            <h4>多資產產品</h4>
-            <p>一站式投資</p>
+            <h4>Multi-Asset Products</h4>
+            <p>One-stop investing</p>
           </div>
         </div>
         <div class="pf-products-grid">
@@ -169,7 +169,7 @@ const techs = [
         </div>
         <div class="pf-screenshot-row">
           <div class="pf-ss-wrap">
-            <img :src="pfRetail" alt="C端用戶平臺界面" class="pf-ss-img" />
+            <img :src="pfRetail" alt="Retail user platform interface" class="pf-ss-img" />
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@ const techs = [
         <div class="pf-sec-header">
           <span class="pf-sec-num">02</span>
           <div class="pf-sec-text">
-            <h2 class="pf-sec-title">做市商（直接接入平臺）</h2>
+            <h2 class="pf-sec-title">Market Makers (Direct Platform Access)</h2>
             <p class="pf-sec-sub">Market Maker · Direct Access</p>
           </div>
           <div class="pf-sec-line"></div>
@@ -188,13 +188,13 @@ const techs = [
         <div class="pf-access-row">
           <div class="pf-access-card">
             <div class="pa-icon">🖥️</div>
-            <h4>做市端 / 直接參與</h4>
-            <p>做市商直接接入平臺，持續雙向報價，保障市場流動性深度</p>
+            <h4>Market-Making Desk / Direct Participation</h4>
+            <p>Market makers connect directly to the platform with continuous two-way quotes to ensure market liquidity depth</p>
           </div>
           <div class="pf-access-card">
             <div class="pa-icon">🔗</div>
-            <h4>全通路接入</h4>
-            <p>HTTPS/JSON 接口 · H5/API 接入 · 直接入市 · 即時交易</p>
+            <h4>End-to-End Access</h4>
+            <p>HTTPS/JSON APIs · H5/API access · Direct market entry · Instant trading</p>
           </div>
         </div>
         <div class="pf-features-grid">
@@ -208,7 +208,7 @@ const techs = [
         </div>
         <div class="pf-screenshot-row">
           <div class="pf-ss-wrap">
-            <img :src="pfMaker" alt="做市商直接接入平臺界面" class="pf-ss-img" />
+            <img :src="pfMaker" alt="Market maker direct access interface" class="pf-ss-img" />
           </div>
         </div>
       </div>
@@ -219,7 +219,7 @@ const techs = [
         <div class="pf-sec-header">
           <span class="pf-sec-num">03</span>
           <div class="pf-sec-text">
-            <h2 class="pf-sec-title">經紀商(券商/銀行；代C端用戶接入平臺)</h2>
+            <h2 class="pf-sec-title">Brokers (Securities Firms / Banks; Agent Access for Retail Users)</h2>
             <p class="pf-sec-sub">Broker · Agent Access</p>
           </div>
           <div class="pf-sec-line"></div>
@@ -227,7 +227,7 @@ const techs = [
         <div class="pf-api-flow">
           <div class="pf-api-node pf-api-broker-app">
             <div class="pf-api-icon">📱</div>
-            <h4>經紀商 APP</h4>
+            <h4>Broker APP</h4>
           </div>
           <div class="pf-api-connector">
             <div class="pf-api-line"></div>
@@ -240,7 +240,7 @@ const techs = [
           </div>
           <div class="pf-api-node pf-api-platform">
             <div class="pf-api-icon">🔷</div>
-            <h4>全通資產交易平臺</h4>
+            <h4>ghkax</h4>
           </div>
         </div>
         <div class="pf-broker-grid">
@@ -252,7 +252,7 @@ const techs = [
         </div>
         <div class="pf-screenshot-row">
           <div class="pf-ss-wrap">
-            <img :src="pfBroker" alt="經紀商接入平臺界面" class="pf-ss-img" />
+            <img :src="pfBroker" alt="Broker platform access interface" class="pf-ss-img" />
           </div>
         </div>
       </div>

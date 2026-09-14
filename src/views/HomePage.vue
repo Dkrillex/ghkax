@@ -11,110 +11,110 @@ const activeTab = ref('overview')
 let anchorOffset = 0
 
 const tabs = [
-  { id: 'overview', label: '公司概述' },
-  { id: 'history', label: '發展歷史' },
-  { id: 'features', label: '平臺特色' },
-  { id: 'cooperation', label: '合作價值' },
+  { id: 'overview', label: 'Company Overview' },
+  { id: 'history', label: 'Development History' },
+  { id: 'features', label: 'Platform Highlights' },
+  { id: 'cooperation', label: 'Partnership Value' },
 ]
 
 const values = [
-  { zh: '通達合規', en: 'Connectivity & Accessibility', desc: '連接全球資產與投資者的橋梁，實現股票、債券等穩健資產配置，通過高效便捷' },
-  { zh: '誠信基礎', en: 'Integrity & Trust', desc: '誠信是交易的基石，我們以嚴謹的道德準則、透明運作和堅實可靠的交易保障' },
-  { zh: '創新敏捷', en: 'Innovation & Agility', desc: '勇於進取，不斷突破技術與準則，將數字化產品適應性強，靈活應對投資者需求' },
-  { zh: '穩健合規', en: 'Stability & Compliance', desc: '追求穩健和高效同時，將風險管控和合規運營放在首位，以確保資產安全交易穩健' },
+  { zh: 'Connectivity & Accessibility', en: 'Connectivity & Accessibility', desc: 'A bridge connecting global assets and investors — enabling resilient allocation across equities, bonds, and more through efficient, accessible channels.' },
+  { zh: 'Integrity & Trust', en: 'Integrity & Trust', desc: 'Integrity is the foundation of trading. We uphold rigorous ethics, transparent operations, and reliable transaction safeguards.' },
+  { zh: 'Innovation & Agility', en: 'Innovation & Agility', desc: 'We push forward, continually advancing technology and standards so digital products stay adaptive and responsive to investor needs.' },
+  { zh: 'Stability & Compliance', en: 'Stability & Compliance', desc: 'Alongside stability and efficiency, we put risk control and compliant operations first to keep assets secure and trading resilient.' },
 ]
 
 const dataCards = [
-  { num: '60+', label: '合作金融機構', sub: '目標 2027 年達 250+' },
-  { num: '140萬+', label: '線上零售客戶', sub: '目標 2027 年達 446萬+' },
-  { num: '1.2萬+', label: 'PI 專業客戶', sub: '目標 2027 年達 3.8萬+' },
-  { num: '7', label: '資產類別覆蓋', sub: '股票·債券·基金·黃金·RWA 等' },
+  { num: '60+', label: 'Partner Financial Institutions', sub: 'Target 250+ by 2027' },
+  { num: '1.4M+', label: 'Online Retail Clients', sub: 'Target 4.46M+ by 2027' },
+  { num: '12K+', label: 'PI Professional Clients', sub: 'Target 38K+ by 2027' },
+  { num: '7', label: 'Asset Classes Covered', sub: 'Equities · Bonds · Funds · Gold · RWA & more' },
 ]
 
 const whyCards = [
-  { icon: '📦', title: '產品全', desc: '公私募全品類：公司債、私人債、證券交易定位股票，門類齊全' },
-  { icon: '👥', title: '客戶多', desc: '更多服務客戶端資產及客戶端服務，接入客戶端資產賦能' },
-  { icon: '💰', title: '成本低', desc: '系統開發/維護成本低於自建，資產流通成本降低，客服運營成本壓縮' },
-  { icon: '⚡', title: '效率高', desc: '直接入市、即時交易、做市匹配、即時結算，全通路服務' },
+  { icon: '📦', title: 'Full Product Range', desc: 'Public and private markets across the board: corporate bonds, private credit, securities trading — complete coverage.' },
+  { icon: '👥', title: 'Broad Client Base', desc: 'More client-side assets and services, with client asset onboarding that strengthens platform empowerment.' },
+  { icon: '💰', title: 'Lower Cost', desc: 'System build/maintenance costs below in-house builds; lower asset circulation costs and leaner customer operations.' },
+  { icon: '⚡', title: 'Higher Efficiency', desc: 'Direct market access, real-time trading, market-making matching, and instant settlement — end-to-end service.' },
 ]
 
 const features = [
   {
     icon: '🛡️',
-    title: '以風控為基礎的投資理念',
-    desc: '在充分控制流動性風險、信用風險與利率風險的前提下，為機構提供專業、穩健的資產服務。',
-    points: ['嚴格把控三大核心風險', '獨立風控體系，持續監控', '多重合規審查機制'],
+    title: 'Risk-First Investment Philosophy',
+    desc: 'With liquidity, credit, and interest-rate risks firmly under control, we deliver professional, resilient asset services for institutions.',
+    points: ['Strict control of three core risks', 'Independent risk framework with continuous monitoring', 'Multi-layer compliance review'],
   },
   {
     icon: '📈',
-    title: '豐富的市場經驗',
-    desc: '深耕香港資本市場，積累多輪市場週期的實戰經驗，為機構客戶提供深度、及時的市場洞察。',
-    points: ['SFC 持牌專業團隊', '多資產類別全覆蓋經驗', '跨境市場流通渠道'],
+    title: 'Deep Market Experience',
+    desc: 'Rooted in Hong Kong capital markets with hands-on experience across market cycles, delivering timely, in-depth insights for institutional clients.',
+    points: ['SFC-licensed professional team', 'Multi-asset coverage experience', 'Cross-border market channels'],
   },
   {
     icon: '🗂️',
-    title: '完備的產品線',
-    desc: '差異化產品設計，覆蓋股票、債券、基金、黃金、RWA 等多元資產，滿足不同機構需求。',
-    points: ['股票 · 債券 · 基金 · 黃金', 'RWA 現實資產代幣化', 'Smart Wallet 智能錢包'],
+    title: 'Complete Product Line',
+    desc: 'Differentiated product design covering equities, bonds, funds, gold, RWA, and more to meet diverse institutional needs.',
+    points: ['Equities · Bonds · Funds · Gold', 'RWA real-world asset tokenization', 'Smart Wallet'],
   },
   {
     icon: '💻',
-    title: '自主研發交易管理系統',
-    desc: '自主開發的全棧交易系統，持續迭代升級，支持 H5、API 及定製化白標接入。',
-    points: ['H5 / API / 定製白標', 'T+0/T+1 清結算能力', '銀證直連，CMU 中央託管'],
+    title: 'In-House Trading Management System',
+    desc: 'Self-developed full-stack trading system, continuously upgraded, supporting H5, API, and customized white-label access.',
+    points: ['H5 / API / custom white-label', 'T+0 / T+1 clearing & settlement', 'Bank-securities linkage; CMU central custody'],
   },
 ]
 
 const featureStats = [
-  { value: '60+', label: '合作金融機構' },
-  { value: '140萬+', label: '線上零售客戶' },
-  { value: '1.2萬+', label: 'PI 專業客戶' },
-  { value: '7+', label: '資產品類' },
+  { value: '60+', label: 'Partner Financial Institutions' },
+  { value: '1.4M+', label: 'Online Retail Clients' },
+  { value: '12K+', label: 'PI Professional Clients' },
+  { value: '7+', label: 'Asset Categories' },
 ]
 
 const coopCards = [
   {
     num: '01',
-    title: '產品全',
-    desc: '依託平臺豐富的產品體系，讓合作機構快速獲得完整的資產配置能力，強化客戶服務競爭力。',
-    points: ['公私募全品類：公司債、私人債、證券等', '覆蓋不同風險偏好的定製化產品', '平臺提供完整合規支持與技術接入'],
+    title: 'Full Product Range',
+    desc: 'Leverage the platform’s rich product suite so partners quickly gain complete asset allocation capability and stronger client-service competitiveness.',
+    points: ['Public & private markets: corporate bonds, private credit, securities, and more', 'Customized products for different risk preferences', 'Full compliance support and technical onboarding'],
   },
   {
     num: '02',
-    title: '客戶多',
-    desc: '藉助平臺現有零售、PI 及機構客戶基礎，快速豐富客戶來源，提升 AUM 規模與客戶留存價值。',
-    points: ['零售 / PI / 機構三層客羣資源共享', '客戶引流成本大幅降低', '平臺系統賦能，提升客戶管理效率'],
+    title: 'Broad Client Base',
+    desc: 'Tap existing retail, PI, and institutional client foundations to expand sources of clients, grow AUM, and improve retention value.',
+    points: ['Shared retail / PI / institutional client resources', 'Much lower client acquisition cost', 'Platform systems that improve client management efficiency'],
   },
   {
     num: '03',
-    title: '成本低',
-    desc: '系統開發/維護成本遠低於自建，資產流通成本顯著降低，客服與中後臺運營成本大幅壓縮。',
-    points: ['系統接入成本極低，快速上線', '資產流通與託管綜合成本下降', '減少冗餘中間商環節的運營費用'],
+    title: 'Lower Cost',
+    desc: 'System build/maintenance costs far below in-house builds; asset circulation costs drop significantly; front- and middle/back-office operating costs are compressed.',
+    points: ['Very low integration cost with fast go-live', 'Lower all-in circulation and custody costs', 'Fewer redundant middleman operating expenses'],
   },
   {
     num: '04',
-    title: '賺更多',
-    desc: '通過 DCM 債券承銷分發、FICC 做市、AUM 增長及投融資業務擴展，開闢多元盈利渠道。',
-    points: ['DCM 債券承銷、分發手續費', 'FICC 產品做市收益擴張', 'AUM 增長驅動管理費與分成收益'],
+    title: 'Earn More',
+    desc: 'Open diversified revenue through DCM bond underwriting and distribution, FICC market-making, AUM growth, and expanded investment & financing businesses.',
+    points: ['DCM bond underwriting and distribution fees', 'Expanded FICC market-making revenue', 'AUM growth driving management fees and revenue share'],
   },
 ]
 
 const partnerTypes = [
-  { icon: '🏦', label: '商業銀行' },
-  { icon: '📋', label: '證券公司' },
-  { icon: '💼', label: '資產管理公司' },
-  { icon: '🏢', label: '家族辦公室' },
-  { icon: '🌐', label: '國際券商' },
+  { icon: '🏦', label: 'Commercial Banks' },
+  { icon: '📋', label: 'Securities Firms' },
+  { icon: '💼', label: 'Asset Management Firms' },
+  { icon: '🏢', label: 'Family Offices' },
+  { icon: '🌐', label: 'International Brokers' },
   { icon: '📊', label: 'Market Maker' },
 ]
 
 const modules = [
-  { to: '/about', icon: '🏢', title: '平臺介紹', desc: 'HKAX 背景、核心定位與合規資質' },
-  { to: '/ecosystem', icon: '🌐', title: '平臺生態', desc: '經紀商、金融機構與終端客戶共同參與' },
-  { to: '/platform-features', icon: '⚙️', title: '平臺功能', desc: '交易、做市、清結算與資產管理' },
-  { to: '/advantages', icon: '🚀', title: '核心優勢', desc: '門類齊全、成本低、效率高、合規保障' },
-  { to: '/cooperation', icon: '🤝', title: '合作價值', desc: '賦能金融機構的產品供給、分銷與客戶維護' },
-  { to: '/contact', icon: '📞', title: '聯繫我們', desc: '聯繫方式、地址與合作諮詢' },
+  { to: '/about', icon: '🏢', title: 'About the Platform', desc: 'ghkax background, core positioning, and compliance credentials' },
+  { to: '/ecosystem', icon: '🌐', title: 'Ecosystem', desc: 'Brokers, financial institutions, and end clients participating together' },
+  { to: '/platform-features', icon: '⚙️', title: 'Platform Features', desc: 'Trading, market-making, clearing & settlement, and asset management' },
+  { to: '/advantages', icon: '🚀', title: 'Core Advantages', desc: 'Full coverage, lower cost, higher efficiency, and compliance assurance' },
+  { to: '/cooperation', icon: '🤝', title: 'Partnership Value', desc: 'Empowering institutions with product supply, distribution, and client retention' },
+  { to: '/contact', icon: '📞', title: 'Contact Us', desc: 'Contact details, address, and partnership inquiries' },
 ]
 
 function sectionTop(el: HTMLElement) {
@@ -163,31 +163,31 @@ onUnmounted(() => {
       <div class="container hero-inner">
         <div class="hero-left reveal">
           <h1 class="hero-title">
-            全通資產交易平臺
+            Asset Trading Platform
             <br />
-            <span class="hero-title-en">HKAX · Embracing Future</span>
+            <span class="hero-title-en">ghkax · Embracing Future</span>
           </h1>
           <p class="hero-desc">
-            HKAX 持牌於香港證監會（SFC），為機構客戶及散戶客戶提供全方位智能化交易平臺服務，以穩健高效、推動金融科技進步，覆蓋股票、債券、基金、黃金及存款證等多資產一站式交易、託管與清結算服務。
+            ghkax is licensed by the Hong Kong Securities and Futures Commission (SFC), providing institutional and retail clients with a comprehensive intelligent trading platform. With a focus on stability, efficiency, and advancing fintech, we deliver one-stop multi-asset trading, custody, and clearing & settlement across equities, bonds, funds, gold, certificates of deposit, and more.
           </p>
           <div class="hero-actions">
-            <RouterLink to="/contact" class="primary-btn">預約洽談</RouterLink>
-            <RouterLink to="/about" class="ghost-btn">瞭解平臺</RouterLink>
+            <RouterLink to="/contact" class="primary-btn">Book a Meeting</RouterLink>
+            <RouterLink to="/about" class="ghost-btn">Explore the Platform</RouterLink>
           </div>
           <div class="hero-stats">
             <div class="stat-item">
               <strong>60<span class="stat-unit">+</span></strong>
-              <span>金融機構</span>
+              <span>Financial Institutions</span>
             </div>
             <div class="stat-divider" />
             <div class="stat-item">
-              <strong>140<span class="stat-unit">萬+</span></strong>
-              <span>線上零售客戶</span>
+              <strong>1.4<span class="stat-unit">M+</span></strong>
+              <span>Online Retail Clients</span>
             </div>
             <div class="stat-divider" />
             <div class="stat-item">
-              <strong>1.2<span class="stat-unit">萬+</span></strong>
-              <span>PI 專業客戶</span>
+              <strong>12<span class="stat-unit">K+</span></strong>
+              <span>PI Professional Clients</span>
             </div>
           </div>
         </div>
@@ -195,29 +195,29 @@ onUnmounted(() => {
           <div class="hero-card-grid">
             <div class="hero-feature-card primary-card">
               <div class="fc-icon">📊</div>
-              <h4>多資產覆蓋</h4>
-              <p>股票、債券、基金、黃金、RWA 等全品類</p>
+              <h4>Multi-Asset Coverage</h4>
+              <p>Equities, bonds, funds, gold, RWA, and more</p>
             </div>
             <div class="hero-feature-card">
               <div class="fc-icon">⚡</div>
-              <h4>即時交易</h4>
-              <p>T+0/T+1 清結算，銀證直連</p>
+              <h4>Real-Time Trading</h4>
+              <p>T+0 / T+1 clearing; bank-securities linkage</p>
             </div>
             <div class="hero-feature-card">
               <div class="fc-icon">🔐</div>
-              <h4>安全託管</h4>
-              <p>CMU 中央託管，合規保障</p>
+              <h4>Secure Custody</h4>
+              <p>CMU central custody with compliance assurance</p>
             </div>
             <div class="hero-feature-card">
               <div class="fc-icon">🔗</div>
-              <h4>靈活接入</h4>
-              <p>H5 / API / 定製化白標接入</p>
+              <h4>Flexible Access</h4>
+              <p>H5 / API / customized white-label access</p>
             </div>
           </div>
         </div>
       </div>
       <div class="scroll-hint">
-        <span>向下探索</span>
+        <span>Scroll to explore</span>
         <div class="scroll-arrow">↓</div>
       </div>
     </section>
@@ -241,20 +241,20 @@ onUnmounted(() => {
           <div class="overview-text">
             <div class="title-line" />
             <p class="section-sub">Corporate Overview</p>
-            <h2 class="section-title">公司概述</h2>
+            <h2 class="section-title">Company Overview</h2>
             <p class="overview-para">
-              全通資產交易（香港）有限公司（簡稱全通資產/HKAX）是 SFC 持牌一類牌照券商，以「穩健高效、推動金融科技進步」為使命，為機構客戶及散戶客戶提供全方位智能化交易平臺服務。
+              ghkax Limited (ghkax) is an SFC Type 1 licensed broker. Guided by the mission of “stable, efficient, and advancing fintech,” we provide institutional and retail clients with a full-spectrum intelligent trading platform.
             </p>
             <p class="overview-para">
-              HKAX 秉持嚴謹、高效、公平、創新、穩健、合規的核心價值觀，提供股票、債券、基金、黃金及穩健證券等綜合服務，通過資產發行、證券交易、投資管理、實時理財等全金融服務發行。
+              ghkax upholds core values of rigor, efficiency, fairness, innovation, stability, and compliance. We offer integrated services across equities, bonds, funds, gold, and other resilient securities — spanning asset issuance, securities trading, investment management, and real-time wealth solutions.
             </p>
             <div class="overview-tags">
-              <span class="tag">📋 SFC 持牌</span>
-              <span class="tag">🌏 穩健高效</span>
-              <span class="tag">💹 多資產覆蓋</span>
-              <span class="tag">🔒 合規保障</span>
+              <span class="tag">📋 SFC Licensed</span>
+              <span class="tag">🌏 Stable & Efficient</span>
+              <span class="tag">💹 Multi-Asset Coverage</span>
+              <span class="tag">🔒 Compliance Assured</span>
             </div>
-            <RouterLink to="/about" class="primary-btn mt-6 inline-btn">詳細介紹</RouterLink>
+            <RouterLink to="/about" class="primary-btn mt-6 inline-btn">Learn More</RouterLink>
           </div>
           <div class="overview-visual">
             <div class="overview-value-cards">
@@ -279,8 +279,8 @@ onUnmounted(() => {
         <div class="section-header center">
           <div class="title-line" style="margin: 0 auto 16px" />
           <p class="section-sub">Platform Features</p>
-          <h2 class="section-title">平臺特色</h2>
-          <p class="section-desc">HKAX 以四大核心能力，構建高效、合規、低成本的資產交易生態</p>
+          <h2 class="section-title">Platform Highlights</h2>
+          <p class="section-desc">ghkax builds an efficient, compliant, low-cost asset trading ecosystem on four core capabilities</p>
         </div>
         <div class="features-grid">
           <div v-for="(f, idx) in features" :key="f.title" class="feature-card">
@@ -307,8 +307,8 @@ onUnmounted(() => {
         <div class="section-header center">
           <div class="title-line" style="margin: 0 auto 16px" />
           <p class="section-sub">Win-Win Cooperation</p>
-          <h2 class="section-title">合作價值</h2>
-          <p class="section-desc">為合作金融機構提供全方位賦能，共同把握增長機遇</p>
+          <h2 class="section-title">Partnership Value</h2>
+          <p class="section-desc">End-to-end empowerment for partner financial institutions to capture growth together</p>
         </div>
         <div class="coop-grid">
           <div v-for="c in coopCards" :key="c.num" class="coop-card">
@@ -323,7 +323,7 @@ onUnmounted(() => {
           </div>
         </div>
         <div class="partners-section">
-          <h3 class="partners-title">合作機構類型</h3>
+          <h3 class="partners-title">Partner Institution Types</h3>
           <div class="partner-types">
             <div v-for="p in partnerTypes" :key="p.label" class="pt-card">
               <span class="pt-icon">{{ p.icon }}</span>
@@ -332,8 +332,8 @@ onUnmounted(() => {
           </div>
         </div>
         <div class="coop-cta">
-          <RouterLink to="/contact" class="primary-btn">立即申請合作</RouterLink>
-          <RouterLink to="/cooperation" class="ghost-btn">查看詳細方案</RouterLink>
+          <RouterLink to="/contact" class="primary-btn">Apply to Partner</RouterLink>
+          <RouterLink to="/cooperation" class="ghost-btn">View Detailed Plans</RouterLink>
         </div>
       </div>
     </section>
@@ -342,7 +342,7 @@ onUnmounted(() => {
       <div class="container">
         <div class="section-header center">
           <p class="section-sub" style="color: var(--gold)">Platform Data</p>
-          <h2 class="section-title" style="color: #fff">平臺核心數據</h2>
+          <h2 class="section-title" style="color: #fff">Platform Key Metrics</h2>
         </div>
         <div class="data-grid">
           <div v-for="d in dataCards" :key="d.label" class="data-card">
@@ -352,7 +352,7 @@ onUnmounted(() => {
           </div>
         </div>
         <div class="data-cta">
-          <RouterLink to="/contact" class="gold-btn">立即洽談合作 →</RouterLink>
+          <RouterLink to="/contact" class="gold-btn">Talk Partnership Now →</RouterLink>
         </div>
       </div>
     </section>
@@ -362,8 +362,8 @@ onUnmounted(() => {
         <div class="section-header center">
           <div class="title-line" style="margin: 0 auto 16px" />
           <p class="section-sub">Business Value</p>
-          <h2 class="section-title">為什麼選擇 HKAX</h2>
-          <p class="section-desc">為機構合作方提供產品全、成本低、效率高的一站式平臺賦能</p>
+          <h2 class="section-title">Why Choose ghkax</h2>
+          <p class="section-desc">One-stop platform empowerment for institutional partners — full products, lower cost, higher efficiency</p>
         </div>
         <div class="grid grid-4">
           <div v-for="w in whyCards" :key="w.title" class="card why-card">
@@ -379,7 +379,7 @@ onUnmounted(() => {
       <div class="container">
         <div class="section-header center">
           <p class="section-sub">Explore More</p>
-          <h2 class="section-title">探索平臺全貌</h2>
+          <h2 class="section-title">Explore the Full Platform</h2>
         </div>
         <div class="grid grid-3 module-grid">
           <RouterLink v-for="m in modules" :key="m.to" :to="m.to" class="module-card">

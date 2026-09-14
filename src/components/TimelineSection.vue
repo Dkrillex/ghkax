@@ -3,42 +3,42 @@ defineOptions({ inheritAttrs: false })
 const props = defineProps<{ id?: string }>()
 
 const items = [
-  { year: 'HKAX', tag: '', title: '持牌與合規', points: ['香港證監會：1 號牌（證券經紀）', '香港海關：黃金報備'] },
+  { year: 'ghkax', tag: '', title: 'Licensing & Compliance', points: ['Hong Kong SFC: Type 1 licence (securities brokerage)', 'Hong Kong Customs: gold reporting'] },
   {
-    year: '牌照升級',
-    tag: '(申請中)',
-    title: '延伸牌照與資產支持',
-    points: ['VASP：數字資產服務（申請中）', '資產支持數字憑證（RWA）', '債券自動化交易（7 號牌）'],
+    year: 'Licence Upgrade',
+    tag: '(In Progress)',
+    title: 'Extended Licences & Asset Support',
+    points: ['VASP: digital asset services (in progress)', 'Asset-backed digital credentials (RWA)', 'Automated bond trading (Type 7 licence)'],
   },
   {
-    year: '產品板塊',
+    year: 'Product Lines',
     tag: '',
-    title: '多元產品線',
+    title: 'Diversified Product Suite',
     points: [
-      'iStock（港、美、A 股）',
-      '活利得（存款證 - 活期）',
-      '愛黃金（實物 / 零售）',
-      '債券易（債券 即時交易）',
-      '基金易（份額 即時交易）',
+      'iStock (HK / US / A-shares)',
+      'Smart Wallet (CDs · demand)',
+      'i-Gold (physical / retail)',
+      'Bond Trading (real-time)',
+      'Fund Trading (unit real-time)',
     ],
   },
   {
     year: '2026',
-    tag: '預期',
-    title: '平臺參與者與活躍用戶（預期）',
-    points: ['金融機構 60+', '零售客戶 140 萬+', 'PI 專業客戶 1.2 萬+'],
+    tag: 'Target',
+    title: 'Platform Participants & Active Users (Target)',
+    points: ['Financial institutions 60+', 'Retail clients 1.4M+', 'PI professional clients 12K+'],
   },
   {
     year: '2027',
-    tag: '預期',
-    title: '規模目標（預期）',
-    points: ['金融機構 250+', '零售客戶 446 萬+', 'PI 專業客戶 3.8 萬+'],
+    tag: 'Target',
+    title: 'Scale Targets (Expected)',
+    points: ['Financial institutions 250+', 'Retail clients 4.46M+', 'PI professional clients 38K+'],
   },
   {
-    year: '待投產',
+    year: 'Upcoming',
     tag: '',
-    title: '規劃中項目（2027 年投產）',
-    points: ['住宅易（住宅資產電子化交易）', '保單易（儲蓄型保單電子化交易）'],
+    title: 'Planned Projects (Go-live in 2027)',
+    points: ['HomeEasy (electronic trading of residential assets)', 'PolicyEasy (electronic trading of savings policies)'],
   },
 ]
 </script>
@@ -49,8 +49,8 @@ const items = [
       <div class="section-header center">
         <div class="title-line" style="margin: 0 auto 16px" />
         <p class="section-sub">Development History</p>
-        <h2 class="section-title">發展歷史</h2>
-        <p class="section-desc">從持牌証券商到多資產綜合交易平臺，HKAX 持續拓展服務邊界</p>
+        <h2 class="section-title">Development History</h2>
+        <p class="section-desc">From a licensed securities broker to a multi-asset trading platform, ghkax continues to expand its service boundaries</p>
       </div>
       <div class="timeline-container">
         <div class="timeline-line" />

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
-import logo from '../assets/logo-hkax.png'
+import logo from '../assets/ghkax-logo.png'
 
-const feedbackUrl = 'https://www.hkax.com.hk/api/user/oper_feedback'
+const feedbackUrl = 'https://www.ghkax.com/api/user/oper_feedback'
 
 const showForm = ref(false)
 const showSuccess = ref(false)
@@ -38,38 +38,38 @@ const invalid = reactive({
 })
 
 const nav = [
-  { id: 'app-identity', label: '頁面主體標識' },
-  { id: 'before-delete', label: '刪除前須知' },
-  { id: 'how-to-delete', label: '申請流程' },
-  { id: 'what-happens', label: '提交後結果' },
-  { id: 'data-retention', label: '資料保留説明' },
-  { id: 'contact-us', label: '聯絡方式' },
+  { id: 'app-identity', label: 'Page Identity' },
+  { id: 'before-delete', label: 'Before You Delete' },
+  { id: 'how-to-delete', label: 'How to Apply' },
+  { id: 'what-happens', label: 'After Submission' },
+  { id: 'data-retention', label: 'Data Retention' },
+  { id: 'contact-us', label: 'Contact Us' },
 ]
 
 const identity = [
-  { label: '應用名稱', value: '全通易' },
-  { label: 'Google Play 套件名稱', value: 'cn.com.bayconnect' },
-  { label: '營運公司', value: '香港全通資產交易有限公司' },
-  { label: 'English Name', value: 'Hong Kong Quantong Asset Trading Co., Limited' },
-  { label: '官方網站', value: 'https://www.hkax.com.hk' },
-  { label: '頁面用途', value: '提交全通易應用帳戶刪除申請' },
+  { label: 'App Name', value: 'ghkax' },
+  { label: 'Google Play Package Name', value: 'cn.com.bayconnect' },
+  { label: 'Operating Company', value: 'ghkax Limited' },
+  { label: 'English Name', value: 'ghkax Limited' },
+  { label: 'Official Website', value: 'https://www.ghkax.com' },
+  { label: 'Page Purpose', value: 'Submit a ghkax app account deletion request' },
 ]
 
 const steps = [
   {
     index: '01',
-    title: '準備申請資料',
-    description: '請提供與帳戶綁定的姓名、手機號碼、電郵地址或其他可識別資料，方便我們核對您的身份。',
+    title: 'Prepare Your Application Details',
+    description: 'Please provide the name, mobile number, email address, or other identifying information bound to your account so we can verify your identity.',
   },
   {
     index: '02',
-    title: '提交刪除請求',
-    description: '您可透過電郵、郵件或應用內的帳戶刪除入口提出申請，並説明您希望刪除的帳戶資訊。',
+    title: 'Submit a Deletion Request',
+    description: 'You may submit a request by email, post, or through the in-app account deletion portal, and specify the account information you wish to delete.',
   },
   {
     index: '03',
-    title: '等待覈實與處理',
-    description: '我們會在覈實身份後處理您的請求，並在完成後通知您結果；如涉及依法保留資料，也會按規則限制用途。',
+    title: 'Await Verification and Processing',
+    description: 'We will process your request after verifying your identity and notify you of the result upon completion; where data must be retained by law, its use will also be restricted in accordance with the rules.',
   },
 ]
 
@@ -107,23 +107,23 @@ const validate = () => {
   clearInvalid()
   if (!form.name) {
     invalid.name = true
-    return '請填寫姓名。'
+    return 'Please enter your name.'
   }
   if (!form.phone) {
     invalid.phone = true
-    return '請填寫手機號碼。'
+    return 'Please enter your mobile number.'
   }
   if (!form.email) {
     invalid.email = true
-    return '請填寫電子郵箱。'
+    return 'Please enter your email address.'
   }
   if (!form.accountIdentifier) {
     invalid.accountIdentifier = true
-    return '請填寫帳戶識別資訊，方便我們核對您的帳戶。'
+    return 'Please enter account identification information so we can verify your account.'
   }
   if (!form.reason) {
     invalid.reason = true
-    return '請選擇刪除原因。'
+    return 'Please select a reason for deletion.'
   }
   return ''
 }
@@ -134,19 +134,19 @@ const submitForm = async () => {
 
   submitting.value = true
   const contentLines = [
-    '帳戶刪除申請',
-    `姓名：${form.name}`,
-    `手機號碼：${form.phone || '未填寫'}`,
-    `電子郵箱：${form.email || '未填寫'}`,
-    `帳戶識別資訊：${form.accountIdentifier}`,
-    `刪除原因：${form.reason}`,
-    `補充説明：${form.message}`,
+    'Account Deletion Request',
+    `Name: ${form.name}`,
+    `Mobile Number: ${form.phone || 'Not provided'}`,
+    `Email: ${form.email || 'Not provided'}`,
+    `Account Identifier: ${form.accountIdentifier}`,
+    `Reason for Deletion: ${form.reason}`,
+    `Additional Notes: ${form.message}`,
   ]
   const payload = {
     name: form.name,
     phone: form.phone,
     email: form.email,
-    title: '帳戶刪除申請',
+    title: 'Account Deletion Request',
     type: 'account_deletion',
     content: contentLines.join('\n'),
     extra: {
@@ -181,31 +181,30 @@ const submitForm = async () => {
   <div class="page account-deletion-page">
     <section class="delete-hero">
       <div class="container delete-hero-inner">
-        <div class="delete-breadcrumb">首頁 / 帳戶刪除</div>
+        <div class="delete-breadcrumb">Home / Account Deletion</div>
         <span class="delete-eyebrow">Account Deletion</span>
-        <h1 class="delete-title">刪除個人帳號</h1>
+        <h1 class="delete-title">Delete Personal Account</h1>
         <p class="delete-desc">
-          此頁面為「全通易」流動應用程式的官方帳戶刪除入口，由香港全通資產交易有限公司
-          （Hong Kong Quantong Asset Trading Co., Limited）提供。您可以在此提交「全通易」帳戶刪除申請。
-          我們會在覈實身份後處理請求，並在適用法律、監管及交易記錄保存要求下，刪除或匿名化無需繼續保留的個人資料。
+          This page is the official account deletion portal for the "ghkax" mobile application, provided by ghkax Limited. You may submit a "ghkax" account deletion request here.
+          After verifying your identity, we will process the request and, subject to applicable legal, regulatory, and transaction record retention requirements, delete or anonymise personal data that does not need to be retained.
         </p>
         <div class="identity-banner">
           <div class="identity-brand">
-            <img :src="logo" alt="HKAX 全通資產交易" class="identity-logo" />
+            <img :src="logo" alt="ghkax" class="identity-logo" />
             <div>
-              <strong>全通易 App 帳戶刪除</strong>
-              <span>適用於 Google Play 上架應用「全通易」</span>
+              <strong>ghkax App Account Deletion</strong>
+              <span>For the Google Play listing of the "ghkax" app</span>
             </div>
           </div>
           <div class="identity-meta">
-            <span>開發／營運主體：香港全通資產交易有限公司</span>
-            <span>English: Hong Kong Quantong Asset Trading Co., Limited</span>
-            <span>官方網站：www.hkax.com.hk</span>
+            <span>Developer / Operator: ghkax Limited</span>
+            <span>English: ghkax Limited</span>
+            <span>Official Website: www.ghkax.com</span>
           </div>
         </div>
         <div class="delete-hero-actions">
-          <button type="button" class="primary-btn" @click="openForm">提交刪除申請</button>
-          <RouterLink to="/privacy-policy" class="ghost-btn">查看隱私政策</RouterLink>
+          <button type="button" class="primary-btn" @click="openForm">Submit Deletion Request</button>
+          <RouterLink to="/privacy-policy" class="ghost-btn">View Privacy Policy</RouterLink>
         </div>
       </div>
     </section>
@@ -214,16 +213,16 @@ const submitForm = async () => {
       <div class="container">
         <div class="delete-layout">
           <aside class="delete-sidebar card">
-            <h2>快速導航</h2>
+            <h2>Quick Navigation</h2>
             <a v-for="n in nav" :key="n.id" :href="'#' + n.id">{{ n.label }}</a>
           </aside>
 
           <div class="delete-content">
             <section id="app-identity" class="card delete-card">
               <div class="section-sub">Official Identification</div>
-              <h2>此刪除頁面對應的應用與公司主體</h2>
+              <h2>App and Company Identity for This Deletion Page</h2>
               <p class="delete-copy">
-                為方便使用者及平臺審核識別，本頁面明確對應 Google Play 應用「全通易」，並由香港全通資產交易有限公司提供帳戶刪除及資料刪除申請服務。
+                To help users and platform reviewers identify this page, it expressly corresponds to the Google Play app "ghkax" and is provided by ghkax Limited for account deletion and data deletion requests.
               </p>
               <div class="identity-grid">
                 <article v-for="item in identity" :key="item.label" class="identity-card">
@@ -232,23 +231,23 @@ const submitForm = async () => {
                 </article>
               </div>
               <p class="delete-note">
-                如您需要刪除的是「全通易」應用內建立的帳戶，請使用本頁面提交申請；我們將按帳戶持有人身份核驗後進行處理。
+                If you need to delete an account created within the "ghkax" app, please submit your request on this page; we will process it after verifying the account holder's identity.
               </p>
             </section>
 
             <section id="before-delete" class="card delete-card">
               <div class="section-sub">Before You Delete</div>
-              <h2>刪除前須知</h2>
+              <h2>Before You Delete</h2>
               <ul class="delete-list">
-                <li>刪除帳戶後，您將無法再使用與該帳戶綁定的登入、查詢、業務辦理及相關服務。</li>
-                <li>如您在提交申請後改變主意，請盡快透過電郵或客服與我們聯繫，以便在處理完成前協助您確認狀態。</li>
-                <li>基於監管、反洗錢、審計、交易記錄保存及爭議處理要求，部分資料可能需要依法繼續保留一段時間。</li>
+                <li>After account deletion, you will no longer be able to use login, inquiry, business processing, and related services bound to that account.</li>
+                <li>If you change your mind after submitting a request, please contact us promptly by email or customer service so we can help confirm the status before processing is completed.</li>
+                <li>Due to regulatory, anti-money laundering, audit, transaction record retention, and dispute handling requirements, some data may need to continue to be retained for a period of time in accordance with the law.</li>
               </ul>
             </section>
 
             <section id="how-to-delete" class="card delete-card">
               <div class="section-sub">How It Works</div>
-              <h2>如何申請刪除帳戶</h2>
+              <h2>How to Request Account Deletion</h2>
               <div class="step-list">
                 <article v-for="s in steps" :key="s.title" class="step-item">
                   <div class="step-index">{{ s.index }}</div>
@@ -262,62 +261,62 @@ const submitForm = async () => {
 
             <section id="what-happens" class="card delete-card">
               <div class="section-sub">What Happens Next</div>
-              <h2>提交後會發生什麼</h2>
+              <h2>What Happens After Submission</h2>
               <div class="status-grid">
                 <article class="status-item">
-                  <h3>處理時效</h3>
-                  <p>我們會在覈實您的身份及申請內容後，於七（7）個工作日內處理或回覆您的申請。</p>
+                  <h3>Processing Time</h3>
+                  <p>After verifying your identity and the content of your request, we will process or respond to your request within seven (7) working days.</p>
                 </article>
                 <article class="status-item">
-                  <h3>帳戶狀態</h3>
-                  <p>刪除完成後，與該帳戶相關的登入能力與一般服務存取將被終止。</p>
+                  <h3>Account Status</h3>
+                  <p>Once deletion is complete, login capability and general service access related to that account will be terminated.</p>
                 </article>
                 <article class="status-item">
-                  <h3>資料處理</h3>
-                  <p>無需依法保留的個人資料將被刪除或匿名化處理；需留存的部分將受到存取限制。</p>
+                  <h3>Data Handling</h3>
+                  <p>Personal data that does not need to be retained by law will be deleted or anonymised; data that must be retained will be subject to access restrictions.</p>
                 </article>
               </div>
             </section>
 
             <section id="data-retention" class="card delete-card">
               <div class="section-sub">Data Retention</div>
-              <h2>哪些資料可能不會立即刪除</h2>
+              <h2>Data That May Not Be Deleted Immediately</h2>
               <p class="delete-copy">
-                參照本公司的隱私政策與合規要求，以下類型資料可能因法定義務而在一定期間內保留：
+                In accordance with the Company's privacy policy and compliance requirements, the following types of data may be retained for a period of time due to legal obligations:
               </p>
               <ul class="delete-list">
-                <li>客戶身份核驗及 KYC／AML 合規資料。</li>
-                <li>交易、委託、成交、清算、結算、持倉及資金相關記錄。</li>
-                <li>安全風控、異常登入、審計、爭議處理及投訴處理所需資料。</li>
+                <li>Customer identity verification and KYC / AML compliance data.</li>
+                <li>Records related to transactions, orders, trades, clearing, settlement, positions, and funds.</li>
+                <li>Data required for security risk control, abnormal login monitoring, audit, dispute handling, and complaint handling.</li>
               </ul>
               <p class="delete-note">
-                一般情況下，相關資料保存期限不少於七（7）年；具體以適用法律法規、監管規則及內部合規要求為準。
+                In general, the retention period for relevant data is not less than seven (7) years; the specific period is subject to applicable laws and regulations, regulatory rules, and internal compliance requirements.
               </p>
             </section>
 
             <section id="contact-us" class="card delete-card delete-contact-card">
               <div class="section-sub">Need Help?</div>
-              <h2>聯絡我們提交申請</h2>
+              <h2>Contact Us to Submit a Request</h2>
               <div class="contact-grid">
-                <a href="mailto:ops@hkax.com.hk" class="contact-tile">
-                  <strong>電郵申請</strong>
-                  <span>ops@hkax.com.hk</span>
+                <a href="mailto:ops@ghkax.com" class="contact-tile">
+                  <strong>Email Request</strong>
+                  <span>ops@ghkax.com</span>
                 </a>
                 <a href="tel:+85223312862" class="contact-tile">
-                  <strong>電話聯絡</strong>
+                  <strong>Phone Contact</strong>
                   <span>13728883039</span>
                 </a>
                 <button type="button" class="contact-tile contact-button" @click="openForm">
-                  <strong>提交表單</strong>
-                  <span>填寫表單</span>
+                  <strong>Submit Form</strong>
+                  <span>Fill out the form</span>
                 </button>
               </div>
               <div class="contact-meta">
-                <p><strong>適用應用：</strong>全通易</p>
-                <p><strong>公司名稱：</strong>香港全通資產交易有限公司</p>
-                <p><strong>英文名稱：</strong>Hong Kong Quantong Asset Trading Co., Limited</p>
-                <p><strong>官方網站：</strong>https://www.hkax.com.hk</p>
-                <p><strong>通訊地址：</strong>香港九龍九龍灣宏照道39號企業廣場三期41F</p>
+                <p><strong>Applicable App:</strong> ghkax</p>
+                <p><strong>Company Name:</strong> ghkax Limited</p>
+                <p><strong>English Name:</strong> ghkax Limited</p>
+                <p><strong>Official Website:</strong> https://www.ghkax.com</p>
+                <p><strong>Correspondence Address:</strong> 41/F, Enterprise Square Three, 39 Wang Chiu Rd, Kowloon Bay, Hong Kong</p>
               </div>
             </section>
           </div>
@@ -331,82 +330,82 @@ const submitForm = async () => {
           <div class="modal-header">
             <div>
               <p class="section-sub">Delete Request</p>
-              <h2>提交刪除帳戶申請</h2>
+              <h2>Submit Account Deletion Request</h2>
             </div>
-            <button type="button" class="modal-close" aria-label="關閉彈窗" @click="closeForm">×</button>
+            <button type="button" class="modal-close" aria-label="Close dialog" @click="closeForm">×</button>
           </div>
           <form class="delete-form" @submit.prevent="submitForm">
             <div class="form-grid">
               <label class="form-field">
-                <span>姓名 <em class="required-mark">*</em></span>
+                <span>Name <em class="required-mark">*</em></span>
                 <input
                   v-model.trim="form.name"
                   type="text"
-                  placeholder="請輸入您的姓名"
+                  placeholder="Please enter your name"
                   :class="{ 'field-invalid': invalid.name }"
                   @input="clearField('name')"
                 />
               </label>
               <label class="form-field">
-                <span>手機號碼 <em class="required-mark">*</em></span>
+                <span>Mobile Number <em class="required-mark">*</em></span>
                 <input
                   v-model.trim="form.phone"
                   type="tel"
-                  placeholder="請輸入聯絡電話"
+                  placeholder="Please enter your contact number"
                   :class="{ 'field-invalid': invalid.phone }"
                   @input="clearField('phone')"
                 />
               </label>
               <label class="form-field">
-                <span>電子郵箱 <em class="required-mark">*</em></span>
+                <span>Email <em class="required-mark">*</em></span>
                 <input
                   v-model.trim="form.email"
                   type="email"
-                  placeholder="請輸入常用郵箱"
+                  placeholder="Please enter your email address"
                   :class="{ 'field-invalid': invalid.email }"
                   @input="clearField('email')"
                 />
               </label>
               <label class="form-field">
-                <span>帳戶識別資訊 <em class="required-mark">*</em></span>
+                <span>Account Identifier <em class="required-mark">*</em></span>
                 <input
                   v-model.trim="form.accountIdentifier"
                   type="text"
-                  placeholder="如帳號、UID 或已綁定手機號"
+                  placeholder="e.g. account ID, UID, or bound mobile number"
                   :class="{ 'field-invalid': invalid.accountIdentifier }"
                   @input="clearField('accountIdentifier')"
                 />
               </label>
             </div>
-            <p class="form-hint">帶 <em class="required-mark">*</em> 的欄位為必填。</p>
+            <p class="form-hint">Fields marked with <em class="required-mark">*</em> are required.</p>
             <label class="form-field">
-              <span>刪除原因 <em class="required-mark">*</em></span>
+              <span>Reason for Deletion <em class="required-mark">*</em></span>
               <select
                 v-model="form.reason"
                 :class="{ 'field-invalid': invalid.reason }"
                 @change="clearField('reason')"
               >
-                <option value="">請選擇原因</option>
-                <option value="no_longer_needed">不再使用此帳戶</option>
-                <option value="privacy_concern">出於隱私或資料安全考量</option>
-                <option value="duplicate_account">重複註冊或更換帳戶</option>
-                <option value="other">其他原因</option>
+                <option value="">Please select a reason</option>
+                <option value="no_longer_needed">No longer need this account</option>
+                <option value="privacy_concern">Privacy or data security concerns</option>
+                <option value="duplicate_account">Duplicate registration or switching accounts</option>
+                <option value="other">Other reason</option>
               </select>
             </label>
             <label class="form-field">
-              <span>補充説明</span>
+              <span>Additional Notes</span>
               <textarea
                 v-model.trim="form.message"
                 rows="5"
-                placeholder="可補充刪除申請背景、希望聯絡的時段，或其他需要我們核實的資訊"
+                placeholder="You may add background for the deletion request, preferred contact times, or other information we need to verify"
                 @input="clearField('message')"
               />
             </label>
             <p v-if="formError" class="form-error">{{ formError }}</p>
             <div class="modal-actions">
-              <button type="button" class="ghost-btn" @click="closeForm">取消</button>
+              <button type="button" class="ghost-btn" @click="closeForm">Cancel</button>
               <button type="submit" class="primary-btn" :disabled="submitting">
-                {{ submitting ? '提交中...' : '確認提交' }}
+                {{ submitting ? 'Submitting...' : 'Confirm Submission' }}
               </button>
             </div>
           </form>
@@ -417,13 +416,13 @@ const submitForm = async () => {
     <Transition name="modal-fade">
       <div v-if="showSuccess" class="modal-overlay" @click.self="closeSuccess">
         <div class="modal-panel modal-panel-sm">
-          <div class="success-badge">提交成功</div>
-          <h2 class="success-title">刪除申請已收到</h2>
+          <div class="success-badge">Submitted Successfully</div>
+          <h2 class="success-title">Deletion Request Received</h2>
           <p class="success-copy">
-            我們已收到您的帳戶刪除申請，會在覈實資料後於七個工作日內完成處理或與您聯絡確認。
+            We have received your account deletion request and will complete processing or contact you for confirmation within seven working days after verifying your information.
           </p>
           <div class="modal-actions">
-            <button type="button" class="primary-btn" @click="closeSuccess">我知道了</button>
+            <button type="button" class="primary-btn" @click="closeSuccess">Got It</button>
           </div>
         </div>
       </div>
